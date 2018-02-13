@@ -1,0 +1,171 @@
+# ---------------------------------------------------------------
+# Site Information Settings
+# ---------------------------------------------------------------
+
+# Header Menu
+menu:
+  Home: /
+  Archives: archives
+  Categories: categories
+  Tags: tags
+  # About: about
+rss: /atom.xml
+
+since: 2017
+
+# Set default keywords (Use a comma to separate)
+keywords: "前端,HTML,CSS,JS,生活"
+
+# Put your favicon.ico or avatar.jpg into `hexo-site/themes/hiker/source/` directory.
+avatar:
+  enable: true
+  border: true
+  width: 124
+  height: 124
+  top: 0
+  url: http://myblog-static.oss-cn-beijing.aliyuncs.com/favor-icon/avatar.jpg
+
+favicon:
+  enable: true
+  url: http://myblog-static.oss-cn-beijing.aliyuncs.com/favor-icon/mylogo.png
+
+# canvas-bg
+canvas_bg:
+  enable: true
+
+
+# Homepage
+# eg. home_background_image: [css/images/home-bg.jpg, http://t.cn/RMbvEza]
+# eg. mode: image | polyline | trianglify
+home_background_image:
+  enable: true
+  mode: image
+  rolling: false
+  url: [http://myblog-static.oss-cn-beijing.aliyuncs.com/index-banner/js-rock.gif]
+
+home_logo_image:
+  enable: false
+  border: false
+  url: css/images/homelogo.jpg
+
+
+# AboutPage background
+about_big_image:
+
+
+# Archive pagination
+archive_pagination: true
+
+
+# Post Article's Content
+post_catalog:
+  enable: true
+
+
+# Content
+fancybox: true
+
+
+# Sidebar
+sidebar: right
+widgets:
+- social
+- category
+- tag
+- tagcloud
+- archive
+- recent_posts
+
+
+# Social Links
+# Key is the name of FontAwsome icon.
+# Value is the target link (E.g. GitHub: https://github.com/iTimeTraveler)
+social:
+  Github: https://github.com/SuperRay3
+  Weibo: https://weibo.com/12lei/
+  Twitter:
+  Facebook:
+  Google-plus:
+  Instagram:
+  Pinterest:
+  Flickr:
+  email: ljl519525771@qq.com
+
+
+# Search
+search:
+    insight: true # you need to install `hexo-generator-json-content` before using Insight Search
+    swiftype: # enter swiftype install key here
+    baidu: false # you need to disable other search engines to use Baidu search, options: true, false
+
+
+# comment ShortName, you can choose only ONE to display.
+gentie_productKey: #your-gentie-product-key
+duoshuo_shortname:
+disqus_shortname:
+livere_shortname: MTAyMC8yOTQ4MS82MDQ5
+uyan_uid:
+wumii:
+
+
+# Code Highlight theme
+# Available value:
+#    default | gray | normal | night | night eighties | night blue | night bright
+# https://github.com/chriskempson/tomorrow-theme
+highlight_theme: default
+
+
+# Article theme color
+# Available value:
+#    random | orange | blue | red | green | black
+theme_color: black
+
+
+# display widgets at the bottom of index pages (pagination == 2)
+index_widgets:
+# - category
+# - tagcloud
+# - archive
+
+
+# widget behavior
+archive_type: 'monthly'
+show_count: true
+
+# Google Webmaster tools verification setting
+# See: https://www.google.com/webmasters/
+google_site_verification: pTRbturh_lAK5OIXLwAO7OKRMaEgSX2MtqqFrk1AMRM
+baidu_site_verification: vyp41u64K8
+qihu_site_verification:
+
+# Miscellaneous
+google_analytics:
+gauges_analytics:
+baidu_analytics:
+tencent_analytics:
+twitter:
+google_plus:
+fb_admins:
+fb_app_id:
+
+# Facebook SDK Support.
+# https://github.com/iissnan/hexo-theme-next/pull/410
+facebook_sdk:
+  enable: false
+  app_id:       #<app_id>
+  fb_admin:     #<user_id>
+  like_button:  #true
+  webmaster:    #true
+
+# CNZZ count
+cnzz_siteid:
+
+# record
+record_code: 冀ICP备17022284号
+
+# donation button
+donate:
+    enable: true
+    message: '水平有限，喝杯咖啡交个朋友吧。'
+    wechatImage: http://myblog-static.oss-cn-beijing.aliyuncs.com/Donate/wechat.png?x-oss-process=style/blogImg-watermark
+    alipayImage: http://myblog-static.oss-cn-beijing.aliyuncs.com/Donate/alipay.jpg?x-oss-process=style/blogImg-watermark

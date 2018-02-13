@@ -1,0 +1,52 @@
+<%- partial('_partial/head') %>
+
+<% if (is_home()){ %>
+  <a href="https://github.com/SuperRay3"><img style="z-index: 100;position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/c6625ac1f3ee0a12250227cf83ce904423abf351/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png"></a>
+<% } %>
+
+<% if (is_home() && theme.canvas_bg.enable){ %>
+  <canvas id="canvas" style="z-index: 1; position: fixed; top:0; left: 0;"></canvas>
+  <%- js('js/canvas-bg') %>
+<% } %>
+
+<% if (is_post()){ %>
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+<% } else {%>
+  <body>
+<% } %>
+
+  <% if (is_home() && theme.home_background_image.enable){ %>
+    <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+  <% } %>
+  <div id="container">
+    <div id="wrap">
+      <% if (!is_home() || !theme.home_background_image.enable){ %>
+        <%- partial('_partial/header-post') %>
+      <% } %>
+
+      <div id="content" class="outer">
+        <% if (theme.sidebar && theme.sidebar !== 'bottom' && (is_archive())){ %>
+          <section id="main"><%- body %></section>
+          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+        <% } else { %>
+          <section id="main" style="float:none;"><%- body %></section>
+        <% } %>
+      </div>
+      <% if (is_home()){ %>
+        <div align="center" style="margin-top: 30px;"><hr class="hr" style="margin:0px; height:3px;"></div>
+      <% } %>
+      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+    </div>
+    <!-- <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %> -->
+    <%- partial('_partial/after-footer') %>
+  </div>
+
+  <%- partial('_partial/dialog') %>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  <% if (is_post() && theme.post_catalog.enable){ %>
+    <a id="menu-switch"><i class="fa fa-bars fa-lg"></i></a>
+  <% } %>
+</body>
+</html>
