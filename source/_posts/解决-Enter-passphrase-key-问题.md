@@ -44,6 +44,9 @@ Once again, this will ask you for the passphrase, enter it and this time it will
 第一点中提到的解决方法就是没有利用 `keychain` 来管理密码。持久性只能保持到当前会话。
 
 
+测试第二种方法是否生效
+
+
 
 
 
