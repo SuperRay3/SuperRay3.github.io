@@ -11,7 +11,7 @@ categories:
 
 <!-- more -->
 
-## 0. 解决方法
+## 解决方法
 
 本地依次运行以下代码：
 
@@ -32,7 +32,7 @@ ssh-add
 
 ***如上的命令只对当前会话有效，当会话关闭立马就会失效。***
 
-## 1. 永久性解决问题
+## 永久性解决问题
 
 **利用 `Keychain`**
 
@@ -43,7 +43,7 @@ Once again, this will ask you for the passphrase, enter it and this time it will
 
 第一点中提到的解决方法就是没有利用 `keychain` 来管理密码。持久性只能保持到当前会话。
 
-## 2. 参考文章
+## 参考文章
 
 [SSH Key - Still asking for password and passphrase
 ](https://stackoverflow.com/questions/21095054/ssh-key-still-asking-for-password-and-passphrase)

@@ -14,13 +14,13 @@ categories:
 
 #### **[官方文档](https://help.github.com/)是个好东西，一定要利用起来**
 
-# **0. 准备要托管的文件**
+# **准备要托管的文件**
 
 可以是项目代码，也可以是文本、图片任何类型文件。我这里就是几篇博文（markdown 格式）
 
 ![0-1 项目文件](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/git%E5%AE%9E%E6%93%8D/0-1%20%E9%A1%B9%E7%9B%AE%E6%96%87%E4%BB%B6.png)
 
-# **1. 初始化一个 `git` 项目**
+# **初始化一个 `git` 项目**
 
 这里有两种方法：
 
@@ -77,7 +77,7 @@ categories:
 
 > 通过以上的操作，已经建立起了本地和远程仓库的链接，为下面的文件互相推送构建了基础。
 
-# **2. `pull` 拉取远程仓库到本地**
+# **`pull` 拉取远程仓库到本地**
 
 `git pull origin master` 上面新建的远程仓库只包含一个 `README.md` 文件，执行过这条指令过后本地仓库就与远程仓库状态同步。
 
@@ -85,13 +85,13 @@ categories:
 
 相似的操作还有 `git clone, git fetch, git merge` 暂时不详细描述。[相关参考](https://help.github.com/articles/fetching-a-remote/)
 
-# **3. 提交**
+# **提交**
 
 `git` 的提交和 `svn` 的提交差别很大，这是由他俩原理决定的。
 
 （未完，后期补）
 
-# **4. 添加 `.gitignore` 文件**
+# **添加 `.gitignore` 文件**
 
 > `.gitignore` 是告诉 `git` 哪些文件是忽略提交的。
 

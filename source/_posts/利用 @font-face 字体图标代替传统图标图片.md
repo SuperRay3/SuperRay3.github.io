@@ -11,7 +11,7 @@ categories:
 
 <!-- more -->
 
-# 0. [`@font-face`](http://devdocs.io/css/@font-face) 登台
+# [`@font-face`](http://devdocs.io/css/@font-face) 登台
 
 一言以蔽之，这个 CSS 属性可以让你像操作文本一样操作图标，故而得名字体图标（图标字体）。
 
@@ -21,7 +21,7 @@ categories:
 
 IE6 都能兼容到，虽然是只兼容 `EOT` 格式，但是已经够用，为什么呢？ 因为下面这个平台。
 
-# 1. [IconFont - 阿里巴巴矢量图标库](http://www.iconfont.cn/)
+# [IconFont - 阿里巴巴矢量图标库](http://www.iconfont.cn/)
 
 先上几张图，他是长这样的：
 

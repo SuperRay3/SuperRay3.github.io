@@ -13,7 +13,7 @@ categories:
 <!-- more -->
 
 
-## **0. Timing**
+## **Timing**
 
 function passed to `.then` will never be called synchronously,even with an already-resolved promise.
 

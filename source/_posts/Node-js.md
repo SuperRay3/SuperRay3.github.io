@@ -13,7 +13,7 @@ categories:
 
 <!-- more -->
 
-## 0. Node.js 优势
+## Node.js 优势
 
 在 ***高并发、I/O 密集型*** 场景有明显优势
 

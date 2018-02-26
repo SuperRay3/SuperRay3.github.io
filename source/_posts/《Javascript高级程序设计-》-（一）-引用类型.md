@@ -19,7 +19,7 @@ categories: 烂笔头
 > `new Object()` 已经完成了对象的创建，创建出来的是 `Object` 引用类型的新实例。
 
 
-## 0. Object 类型
+## Object 类型
 
 ### 创建方式：
 

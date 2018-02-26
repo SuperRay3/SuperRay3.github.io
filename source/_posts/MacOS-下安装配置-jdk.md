@@ -17,7 +17,7 @@ categories:
 
 这里主要以 1.7 为例
 
-## 0. 获取并安装 jdk
+## 获取并安装 jdk
 
 [oracle Java Archive 集合下载](http://www.oracle.com/technetwork/java/javase/archive-139210.html)
 
@@ -38,7 +38,7 @@ categories:
 ![1-3](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/MacOS%20%E4%B8%8B%20jdk%20%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/1-3.png?x-oss-process=style/blogImg-watermark)
 
 
-## 1. 配置环境变量
+## 配置环境变量
 
 - 首先定位到 `/etc/profile`
 
@@ -66,6 +66,9 @@ export PATH="$PATH:$JAVA_HOME"
 大功告成！
 
 ---
+
+2017-02-26 星期一 23:21
+
 > 不知道是不是因为上述配置原因导致的项目无法启动，错误代码：
 <br/>
 ```
@@ -75,7 +78,7 @@ java.lang.ClassCastException: org.apache.catalina.util.ParameterMap cannot be ca
 <br/>
 错误原因还未能找到，但是因为这个原因接触到了 Mac 下如何卸载 java，方法如下 ⬇️
 
-## 2. 卸载 java
+## 卸载 java
 
 > 参考：[官方卸载方法 java](https://www.java.com/en/download/help/mac_uninstall_java.xml), [官方卸载方法 jdk](https://docs.oracle.com/javase/8/docs/technotes/guides/install/mac_jdk.html)
 
