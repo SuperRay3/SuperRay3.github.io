@@ -40,16 +40,17 @@ categories:
 
 ## 1. 配置环境变量
 
-- 首先定位到 `et/profile`
+- 首先定位到 `/etc/profile`
 
 ![2-1](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/MacOS%20%E4%B8%8B%20jdk%20%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/2-1.png?x-oss-process=style/blogImg-watermark)
 
 - 通过 `sudo vi profile` 对文件进行编辑，
 将
 ```bash
-JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0.80_jdk/Contents/Home"
-
+JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home"
+export JAVA_HOME
 CLASS_PATH="$JAVA_HOME/lib"
+export PATH="$PATH:$JAVA_HOME"
 ```
 
 ![2-2](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/MacOS%20%E4%B8%8B%20jdk%20%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/2-2.png?x-oss-process=style/blogImg-watermark)
@@ -63,4 +64,44 @@ CLASS_PATH="$JAVA_HOME/lib"
 ![2-4](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/MacOS%20%E4%B8%8B%20jdk%20%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/2-4.png?x-oss-process=style/blogImg-watermark)
 
 大功告成！
+
+---
+> 不知道是不是因为上述配置原因导致的项目无法启动，错误代码：
+<br/>
+```
+EVERE: Servlet.service() for servlet default threw exception
+java.lang.ClassCastException: org.apache.catalina.util.ParameterMap cannot be cast to java.util.HashMap
+```
+<br/>
+错误原因还未能找到，但是因为这个原因接触到了 Mac 下如何卸载 java，方法如下 ⬇️
+
+## 2. 卸载 java
+
+> 参考：[官方卸载方法 java](https://www.java.com/en/download/help/mac_uninstall_java.xml), [官方卸载方法 jdk](https://docs.oracle.com/javase/8/docs/technotes/guides/install/mac_jdk.html)
+
+
+`卸载 java`
+
+**Note: 需使用管理员权限 sudo**
+
+- 打开终端并输入一下命令分别运行
+
+```bash
+sudo rm -fr /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin
+sudo rm -fr /Library/PreferencePanes/JavaControlPanel.prefPane
+sudo rm -fr ~/Library/Application\ Support/Java
+```
+
+`卸载 jdk`
+
+**Note: 需使用管理员权限 sudo**
+
+- 打开终端并定位到 `/Library/Java/JavaVirtualMachines` ,并且删除下方的 `jdk 文件夹`
+
+![3-1](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/MacOS%20%E4%B8%8B%20jdk%20%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/3-1.png?x-oss-process=style/blogImg-watermark)
+
+
+
+
+
 
