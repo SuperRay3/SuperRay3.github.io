@@ -19,15 +19,15 @@ categories:
 
 ## 获取并安装 jdk
 
-[oracle Java Archive 集合下载](http://www.oracle.com/technetwork/java/javase/archive-139210.html)
+[oracle Java Archive 集合下载](https://www.oracle.com/technetwork/java/javase/archive-139210.html)
 
 在上面的链接选择需要的版本进行下载，这里我选择 1.7
 
-![1-1](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/MacOS%20%E4%B8%8B%20jdk%20%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/1-1.jpg?x-oss-process=style/blogImg-watermark)
+![1-1](https://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/MacOS%20%E4%B8%8B%20jdk%20%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/1-1.jpg?x-oss-process=style/blogImg-watermark)
 
 点击 `Accept License Agreemen` 而后点击下载链接进行下载
 
-![1-2](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/MacOS%20%E4%B8%8B%20jdk%20%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/1-2.png?x-oss-process=style/blogImg-watermark)
+![1-2](https://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/MacOS%20%E4%B8%8B%20jdk%20%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/1-2.png?x-oss-process=style/blogImg-watermark)
 
 下载完成后，双击打开安装包，一路下一步到底。
 
@@ -35,14 +35,14 @@ categories:
 
 成功后如下图：
 
-![1-3](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/MacOS%20%E4%B8%8B%20jdk%20%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/1-3.png?x-oss-process=style/blogImg-watermark)
+![1-3](https://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/MacOS%20%E4%B8%8B%20jdk%20%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/1-3.png?x-oss-process=style/blogImg-watermark)
 
 
 ## 配置环境变量
 
 - 首先定位到 `/etc/profile`
 
-![2-1](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/MacOS%20%E4%B8%8B%20jdk%20%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/2-1.png?x-oss-process=style/blogImg-watermark)
+![2-1](https://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/MacOS%20%E4%B8%8B%20jdk%20%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/2-1.png?x-oss-process=style/blogImg-watermark)
 
 - 通过 `sudo vi profile` 对文件进行编辑，
 将
@@ -53,15 +53,15 @@ CLASS_PATH="$JAVA_HOME/lib"
 export PATH="$PATH:$JAVA_HOME"
 ```
 
-![2-2](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/MacOS%20%E4%B8%8B%20jdk%20%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/2-2.png?x-oss-process=style/blogImg-watermark)
+![2-2](https://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/MacOS%20%E4%B8%8B%20jdk%20%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/2-2.png?x-oss-process=style/blogImg-watermark)
 
 - 指定 `source` 命令，使修改生效
 
-![2-3](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/MacOS%20%E4%B8%8B%20jdk%20%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/2-3.png?x-oss-process=style/blogImg-watermark)
+![2-3](https://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/MacOS%20%E4%B8%8B%20jdk%20%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/2-3.png?x-oss-process=style/blogImg-watermark)
 
 - 检验环境变量是否设置成功 `echo $JAVA_HOME`
 
-![2-4](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/MacOS%20%E4%B8%8B%20jdk%20%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/2-4.png?x-oss-process=style/blogImg-watermark)
+![2-4](https://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/MacOS%20%E4%B8%8B%20jdk%20%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/2-4.png?x-oss-process=style/blogImg-watermark)
 
 大功告成！
 
@@ -101,7 +101,7 @@ sudo rm -fr ~/Library/Application\ Support/Java
 
 - 打开终端并定位到 `/Library/Java/JavaVirtualMachines` ,并且删除下方的 `jdk 文件夹`
 
-![3-1](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/MacOS%20%E4%B8%8B%20jdk%20%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/3-1.png?x-oss-process=style/blogImg-watermark)
+![3-1](https://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/MacOS%20%E4%B8%8B%20jdk%20%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/3-1.png?x-oss-process=style/blogImg-watermark)
 
 
 

@@ -11,36 +11,36 @@ categories:
 
 <!-- more -->
 
-# [`@font-face`](http://devdocs.io/css/@font-face) 登台
+# [`@font-face`](https://devdocs.io/css/@font-face) 登台
 
 一言以蔽之，这个 CSS 属性可以让你像操作文本一样操作图标，故而得名字体图标（图标字体）。
 
 这么好用的属性看一看[兼容性](https://caniuse.com/#search=font-face)
 
-![大好河山一片绿啊！](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/%E5%88%A9%E7%94%A8%20%40font-face%20%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87%E4%BB%A3%E6%9B%BF%E5%9B%BE%E7%89%87%E5%9B%BE%E6%A0%87/0%20-%201%20%E5%85%BC%E5%AE%B9%E6%80%A7.png?x-oss-process=style/blogImg-watermark)
+![大好河山一片绿啊！](https://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/%E5%88%A9%E7%94%A8%20%40font-face%20%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87%E4%BB%A3%E6%9B%BF%E5%9B%BE%E7%89%87%E5%9B%BE%E6%A0%87/0%20-%201%20%E5%85%BC%E5%AE%B9%E6%80%A7.png?x-oss-process=style/blogImg-watermark)
 
 IE6 都能兼容到，虽然是只兼容 `EOT` 格式，但是已经够用，为什么呢？ 因为下面这个平台。
 
-# [IconFont - 阿里巴巴矢量图标库](http://www.iconfont.cn/)
+# [IconFont - 阿里巴巴矢量图标库](https://www.iconfont.cn/)
 
 先上几张图，他是长这样的：
 
-![1 - 1 iconfont](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/%E5%88%A9%E7%94%A8%20%40font-face%20%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87%E4%BB%A3%E6%9B%BF%E5%9B%BE%E7%89%87%E5%9B%BE%E6%A0%87/1%20-%201%20iconfont.png?x-oss-process=style/blogImg-watermark)
+![1 - 1 iconfont](https://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/%E5%88%A9%E7%94%A8%20%40font-face%20%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87%E4%BB%A3%E6%9B%BF%E5%9B%BE%E7%89%87%E5%9B%BE%E6%A0%87/1%20-%201%20iconfont.png?x-oss-process=style/blogImg-watermark)
 
 
-![1 - 2 iconfont](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/%E5%88%A9%E7%94%A8%20%40font-face%20%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87%E4%BB%A3%E6%9B%BF%E5%9B%BE%E7%89%87%E5%9B%BE%E6%A0%87/1%20-2%20iconfont.png?x-oss-process=style/blogImg-watermark)
+![1 - 2 iconfont](https://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/%E5%88%A9%E7%94%A8%20%40font-face%20%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87%E4%BB%A3%E6%9B%BF%E5%9B%BE%E7%89%87%E5%9B%BE%E6%A0%87/1%20-2%20iconfont.png?x-oss-process=style/blogImg-watermark)
 
-![1 - 3 iconfont](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/%E5%88%A9%E7%94%A8%20%40font-face%20%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87%E4%BB%A3%E6%9B%BF%E5%9B%BE%E7%89%87%E5%9B%BE%E6%A0%87/1%20-%203%20iconfont.png?x-oss-process=style/blogImg-watermark)
+![1 - 3 iconfont](https://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/%E5%88%A9%E7%94%A8%20%40font-face%20%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87%E4%BB%A3%E6%9B%BF%E5%9B%BE%E7%89%87%E5%9B%BE%E6%A0%87/1%20-%203%20iconfont.png?x-oss-process=style/blogImg-watermark)
 
 通过上面的方法，已经能够减少我们很大的工作量了。以前只能使用 `img` 的形式现在完全可以将选中的图标下载为 `svg` 格式的文件然后在浏览器中打开，最后将代码复制到项目中去。
 
 这对于图标不多的地方已经相当实用了，但这还不是这个平台最厉害的地方，最厉害的在下面。
 
-![1 - 5 生成代码](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/%E5%88%A9%E7%94%A8%20%40font-face%20%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87%E4%BB%A3%E6%9B%BF%E5%9B%BE%E7%89%87%E5%9B%BE%E6%A0%87/1%20-%205%20%E7%94%9F%E6%88%90%E4%BB%A3%E7%A0%81.png?x-oss-process=style/blogImg-watermark)
+![1 - 5 生成代码](https://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/%E5%88%A9%E7%94%A8%20%40font-face%20%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87%E4%BB%A3%E6%9B%BF%E5%9B%BE%E7%89%87%E5%9B%BE%E6%A0%87/1%20-%205%20%E7%94%9F%E6%88%90%E4%BB%A3%E7%A0%81.png?x-oss-process=style/blogImg-watermark)
 
 #### **`@font-face` 的具体使用方法**
 
-[官方文档](http://devdocs.io/css/@font-face)
+[官方文档](https://devdocs.io/css/@font-face)
 
 ```css
 
@@ -68,7 +68,7 @@ IE6 都能兼容到，虽然是只兼容 `EOT` 格式，但是已经够用，为
 
   如果是使用这个平台的代码，我们抓包会看到返回的 `response header` 是下面这个样子的：
 
-  ![1 - 6 使用代码](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/%E5%88%A9%E7%94%A8%20%40font-face%20%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87%E4%BB%A3%E6%9B%BF%E5%9B%BE%E7%89%87%E5%9B%BE%E6%A0%87/1%20-%206%20%E4%BD%BF%E7%94%A8%E4%BB%A3%E7%A0%81.png?x-oss-process=style/blogImg-watermark)
+  ![1 - 6 使用代码](https://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/%E5%88%A9%E7%94%A8%20%40font-face%20%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87%E4%BB%A3%E6%9B%BF%E5%9B%BE%E7%89%87%E5%9B%BE%E6%A0%87/1%20-%206%20%E4%BD%BF%E7%94%A8%E4%BB%A3%E7%A0%81.png?x-oss-process=style/blogImg-watermark)
 
 
   # 总结
@@ -78,11 +78,11 @@ IE6 都能兼容到，虽然是只兼容 `EOT` 格式，但是已经够用，为
 
   ## 相关引用
 
-  [HTTP CORS](http://devdocs.io/http/access_control_cors)
+  [HTTP CORS](https://devdocs.io/https/access_control_cors)
 
-  [阿里巴巴 iconfont](http://www.iconfont.cn/home/index?spm=a313x.7781069.1998910419.2)
+  [阿里巴巴 iconfont](https://www.iconfont.cn/home/index?spm=a313x.7781069.1998910419.2)
 
-  [@font-face](http://devdocs.io/css/@font-face)
+  [@font-face](https://devdocs.io/css/@font-face)
 
 
 

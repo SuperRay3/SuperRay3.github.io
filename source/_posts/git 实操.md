@@ -18,7 +18,7 @@ categories:
 
 可以是项目代码，也可以是文本、图片任何类型文件。我这里就是几篇博文（markdown 格式）
 
-![0-1 项目文件](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/git%E5%AE%9E%E6%93%8D/0-1%20%E9%A1%B9%E7%9B%AE%E6%96%87%E4%BB%B6.png)
+![0-1 项目文件](https://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/git%E5%AE%9E%E6%93%8D/0-1%20%E9%A1%B9%E7%9B%AE%E6%96%87%E4%BB%B6.png)
 
 # **初始化一个 `git` 项目**
 
@@ -33,13 +33,13 @@ categories:
 
   - 打开 `github` 上的个人主页, 点击 `New repository` 按钮。按照指导建立新仓库。
 
-  - ![New reporsitoy](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/git%E5%AE%9E%E6%93%8D/1-%201%20%E5%88%9D%E5%A7%8B%E5%8C%96%20git%20%E9%A1%B9%E7%9B%AE.png)
+  - ![New reporsitoy](https://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/git%E5%AE%9E%E6%93%8D/1-%201%20%E5%88%9D%E5%A7%8B%E5%8C%96%20git%20%E9%A1%B9%E7%9B%AE.png)
 
-  - ![确认创建 repository](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/git%E5%AE%9E%E6%93%8D/1-%202%20%E5%88%9B%E5%BB%BA%20reposito.png)
+  - ![确认创建 repository](https://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/git%E5%AE%9E%E6%93%8D/1-%202%20%E5%88%9B%E5%BB%BA%20reposito.png)
 
   - 最够使用 `git clone` 的方式克隆项目到本地
 
-  ![git clone 克隆项目到本地](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/git%E5%AE%9E%E6%93%8D/1%20-3%20git%20clone.png?x-oss-process=style/blogImg-watermark)
+  ![git clone 克隆项目到本地](https://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/git%E5%AE%9E%E6%93%8D/1%20-3%20git%20clone.png?x-oss-process=style/blogImg-watermark)
 
 
 ### **下面使用第二种方式：**
@@ -61,7 +61,7 @@ categories:
     git init blog-demo
   ```
 
-  ![git init](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/git%E5%AE%9E%E6%93%8D/1-4%20git%20init.png?x-oss-process=style/blogImg-watermark)
+  ![git init](https://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/git%E5%AE%9E%E6%93%8D/1-4%20git%20init.png?x-oss-process=style/blogImg-watermark)
 
 - 使用 [`git add remote`](https://help.github.com/articles/adding-a-remote/) 与远程仓库链接
 
@@ -71,7 +71,7 @@ categories:
 
 
 
-![git remote add 将本地代码与远程仓库建立链接](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/git%E5%AE%9E%E6%93%8D/1-5%20git%20remote.png?x-oss-process=style/blogImg-watermark)
+![git remote add 将本地代码与远程仓库建立链接](https://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/git%E5%AE%9E%E6%93%8D/1-5%20git%20remote.png?x-oss-process=style/blogImg-watermark)
 
 - 使用 `git remote -v` 查看远程状态
 
@@ -81,7 +81,7 @@ categories:
 
 `git pull origin master` 上面新建的远程仓库只包含一个 `README.md` 文件，执行过这条指令过后本地仓库就与远程仓库状态同步。
 
-![git pull 拉取远程数据](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/git%E5%AE%9E%E6%93%8D/2%20-%201%20git%20pull.png?x-oss-process=style/blogImg-watermark)
+![git pull 拉取远程数据](https://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/git%E5%AE%9E%E6%93%8D/2%20-%201%20git%20pull.png?x-oss-process=style/blogImg-watermark)
 
 相似的操作还有 `git clone, git fetch, git merge` 暂时不详细描述。[相关参考](https://help.github.com/articles/fetching-a-remote/)
 

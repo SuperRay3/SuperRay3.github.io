@@ -30,11 +30,11 @@ Windows: `cat id_rsa.pub | clip`
 
 - 2. 打开 github 个人主页， 点击头像， 选择 setting -> SSH and GPG keys
 
-![SSH and GPG keys 设置](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/github%20%E9%85%8D%E7%BD%AE%20SSH%20Key/New%20SSH%20key.png?x-oss-process=style/blogImg-watermark)
+![SSH and GPG keys 设置](https://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/github%20%E9%85%8D%E7%BD%AE%20SSH%20Key/New%20SSH%20key.png?x-oss-process=style/blogImg-watermark)
 
 点击 `New SSH key`
 
-![New SSH key](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/github%20%E9%85%8D%E7%BD%AE%20SSH%20Key/SSH%20and%20GPG%20keys.png?x-oss-process=style/blogImg-watermark)
+![New SSH key](https://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/github%20%E9%85%8D%E7%BD%AE%20SSH%20Key/SSH%20and%20GPG%20keys.png?x-oss-process=style/blogImg-watermark)
 
 在 key 文本域中 `Ctrl + v`， title 文本域随便起一个自己能分辨的名称即可。
 

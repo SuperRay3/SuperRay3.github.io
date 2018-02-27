@@ -15,7 +15,7 @@ categories:
 
 ## 问题描述
 
-![1-1](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/Mac%20%E4%B8%8B%E5%AE%89%E8%A3%85%20eclipse%20%E5%A5%87%E6%80%AA%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/1-1.png?x-oss-process=style/blogImg-watermark)
+![1-1](https://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/Mac%20%E4%B8%8B%E5%AE%89%E8%A3%85%20eclipse%20%E5%A5%87%E6%80%AA%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/1-1.png?x-oss-process=style/blogImg-watermark)
 
 ## 搜寻过程
 
@@ -23,7 +23,7 @@ categories:
 
 但是思来想去这个问题觉得原因应该不在于此，于是开始百度。百度错误代码，错误描述什么的都未果，直到无意间找到了知乎的一个问题，看描述和我遇到的基本一致，再看下方的回答表示问题都解决了。于是尝试通过解答是这解决一下自己的问题。具体方法如下，[问题链接](https://www.zhihu.com/question/51409258)
 
-![2-1](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/Mac%20%E4%B8%8B%E5%AE%89%E8%A3%85%20eclipse%20%E5%A5%87%E6%80%AA%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/2-1.png?x-oss-process=style/blogImg-watermark)
+![2-1](https://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/Mac%20%E4%B8%8B%E5%AE%89%E8%A3%85%20eclipse%20%E5%A5%87%E6%80%AA%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/2-1.png?x-oss-process=style/blogImg-watermark)
 
 
 ## 总结

@@ -22,7 +22,7 @@ categories: 烂笔头
 
 问题的原因确实是权限问题，但是通常用的解决方法也就是直接加 `sudo` 是不推荐的。
 
-![1-1](http://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/git%20permission%20denied/1-1.png?x-oss-process=style/blogImg-watermark)
+![1-1](https://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/git%20permission%20denied/1-1.png?x-oss-process=style/blogImg-watermark)
 
 >`$USER` 替换为个人计算机的用户名。
 
