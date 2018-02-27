@@ -23,11 +23,11 @@ avatar:
   width: 124
   height: 124
   top: 0
-  url: http://myblog-static.oss-cn-beijing.aliyuncs.com/favor-icon/avatar.jpg
+  url: https://myblog-static.oss-cn-beijing.aliyuncs.com/favor-icon/avatar.jpg
 
 favicon:
   enable: true
-  url: http://myblog-static.oss-cn-beijing.aliyuncs.com/favor-icon/mylogo.png
+  url: https://myblog-static.oss-cn-beijing.aliyuncs.com/favor-icon/mylogo.png
 
 # canvas-bg
 canvas_bg:
@@ -41,7 +41,7 @@ home_background_image:
   enable: true
   mode: image
   rolling: false
-  url: [http://myblog-static.oss-cn-beijing.aliyuncs.com/index-banner/js-rock.gif]
+  url: [https://myblog-static.oss-cn-beijing.aliyuncs.com/index-banner/js-rock.gif]
 
 home_logo_image:
   enable: false
@@ -167,5 +167,5 @@ record_code: 冀ICP备17022284号
 donate:
     enable: true
     message: '水平有限，喝杯咖啡交个朋友吧。'
-    wechatImage: http://myblog-static.oss-cn-beijing.aliyuncs.com/Donate/wechat.png?x-oss-process=style/blogImg-watermark
-    alipayImage: http://myblog-static.oss-cn-beijing.aliyuncs.com/Donate/alipay.jpg?x-oss-process=style/blogImg-watermark
+    wechatImage: https://myblog-static.oss-cn-beijing.aliyuncs.com/Donate/wechat.png?x-oss-process=style/blogImg-watermark
+    alipayImage: https://myblog-static.oss-cn-beijing.aliyuncs.com/Donate/alipay.jpg?x-oss-process=style/blogImg-watermark
