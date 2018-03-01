@@ -2,7 +2,7 @@
 title: >-
   MacBook 下npm install 'Please try running this command again as
   root/Administrator.'
-date: 2018-02-13 19:00:40
+date: 2017-05-13 19:00:40
 tags: git
 categories: 烂笔头
 ---

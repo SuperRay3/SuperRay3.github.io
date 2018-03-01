@@ -1,6 +1,6 @@
 ---
 title: 解决 Enter passphrase key 问题
-date: 2018-02-20 22:46:48
+date: 2017-05-20 22:46:48
 tags:
   - ssh
 categories:

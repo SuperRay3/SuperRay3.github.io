@@ -1,6 +1,6 @@
 ---
 title: MacOS 下安装配置 jdk
-date: 2018-02-20 10:12:54
+date: 2017-08-20 10:12:54
 tags:
   - java
   - MacOS

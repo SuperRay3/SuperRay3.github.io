@@ -1,6 +1,6 @@
 ---
 title: 《图解 HTTP》 （三） HTTP 报文内的 HTTP 信息
-date: 2018-02-02 21:24:00
+date: 2017-06-02 21:24:00
 tags: HTTP
 categories: 烂笔头
 ---

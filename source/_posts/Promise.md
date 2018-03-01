@@ -1,6 +1,6 @@
 ---
 title: Promise
-date: 2018-02-17 16:24:50
+date: 2017-03-17 16:24:50
 toc: true
 tags:
     - javascript
