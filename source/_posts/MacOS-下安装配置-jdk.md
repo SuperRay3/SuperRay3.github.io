@@ -63,7 +63,7 @@ export PATH="$PATH:$JAVA_HOME"
 
 ![2-4](https://myblog-static.oss-cn-beijing.aliyuncs.com/post-imgs/MacOS%20%E4%B8%8B%20jdk%20%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/2-4.png?x-oss-process=style/blogImg-watermark)
 
-大功告成！
+
 
 ---
 
