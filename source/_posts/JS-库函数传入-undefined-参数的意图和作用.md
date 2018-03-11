@@ -74,6 +74,16 @@ var list3 = leadingThirtysevenList(1, 2, 3); // [37, 1, 2, 3]
 ```
 [bind() 的详细讲解](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
 
+#### 手写 `bind()`
+
+```js
+	function bind(fn, context){
+		return function (){
+			return fn.apply(context, arguments);
+		}
+	}
+```
+
 上述代码包含两个知识点：
 1. Array.prototype.slice.call(arguments) 可以将一个具有 length 属性的对象转化为数组
 2. 当需要传的实参数量少于形参的数量时，可以用 undefined 占位。
