@@ -9,6 +9,8 @@ categories: 烂笔头
 
 > 最近在接触 `AngularJS`， 被晦涩难懂的各种概念搞得头疼脑涨。`Service`、`Factory`、`Provider` 就是其中几个。
 
+<!-- more -->
+
 ## Factory
 
 Syntax: `module.factory('factoryName', function)`
