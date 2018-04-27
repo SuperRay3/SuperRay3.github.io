@@ -9,7 +9,7 @@ categories:
 
 > 在终端进行 git 操作的时候，难免会进行分支的切换。切来切去的就会忘记当前所在的分支了。下面我们就在终端中加入 git 的分支信息。
 
-## Mac OS 
+## Mac OS
 
 在 `~/.bash_profile` 文件中添加以下代码：
 
@@ -39,7 +39,7 @@ categories:
   fi
   unset color_prompt force_color_prompt
 ```
-
+test reflect
 ## reference
 
 [Git branch name in Linux/Mac Terminal](https://gist.github.com/ankurk91/2efe14650d54d7d09528cea3ed432f6d)
