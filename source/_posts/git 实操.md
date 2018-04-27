@@ -111,21 +111,17 @@ touch .gitignore  // 创建文件
 
 ## [撤销修改](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001374831943254ee90db11b13d4ba9a73b9047f4fb968d000)
 
-这里分为以下两种情况：
+`git checkout -- file` 丢弃工作区的修改，产生以下两种情况：
 
-- 只是在工作区做了修改，还未 `commit` 到暂存区(stage)中。
+- 修改后还未被放到暂存区，撤销修改到和版本库一样的状态
 
-- 已经 `commit` 到了暂存区还未 `push` 到远程仓库。
+- 修改后已经 `add` 到了暂存区，并且又做了修改。撤销为添加暂存区后的状态，然后使用 `git reset HEAD <filename>` 来撤销暂存区的修改。
 
-针对情况一：
+> 以上都是本地还未 `commit` 的情况。如果已经 `commit` 但还未 `push` 到远程仓库，则需要使用 **[版本回退](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013744142037508cf42e51debf49668810645e02887691000)**
 
-`git checkout -- <filename>`  退回到最近一次 `git commit` 或 `git add` 状态
 
-`git checkout -- .` 撤销工作区所有文件更改
 
-针对情况二：
 
-`git reset HAED file` 将暂存区的修改撤销掉，重新放回工作区。紧接着可以结合第一种情况的方法继续撤销修改。
 
 ## change remote
 
