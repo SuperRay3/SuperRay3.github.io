@@ -39,7 +39,7 @@ categories:
   fi
   unset color_prompt force_color_prompt
 ```
-conflict is here
+
 ## reference
 
 [Git branch name in Linux/Mac Terminal](https://gist.github.com/ankurk91/2efe14650d54d7d09528cea3ed432f6d)
