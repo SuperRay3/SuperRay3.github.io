@@ -109,6 +109,41 @@ touch .gitignore  // 创建文件
 
 注: 执行完成后，要定位到 `.gitignore` 文件所在路径进行 `push`
 
+## [撤销修改](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001374831943254ee90db11b13d4ba9a73b9047f4fb968d000)
+
+这里分为以下两种情况：
+
+- 只是在工作区做了修改，还未 `commit` 到暂存区(stage)中。
+
+- 已经 `commit` 到了暂存区还未 `push` 到远程仓库。
+
+针对情况一：
+
+`git checkout -- <filename>`  退回到最近一次 `git commit` 或 `git add` 状态
+
+`git checkout -- .` 撤销工作区所有文件更改
+
+针对情况二：
+
+`git reset HAED file` 将暂存区的修改撤销掉，重新放回工作区。紧接着可以结合第一种情况的方法继续撤销修改。
+
+## change remote
+
+使用 `https` 方式 clone 下来的代码在每次 `pull` 或者 `push` 时都会要求输入用户名和密码。为了解决这个问题，我们需要将代码的远程仓库地址 `remote` 改为 `SSH`。 具体实现如下：
+
+***https -> SSH***
+
+```git
+git remote set-url origin git@github.com:USERNAME/REPOSITORY.git
+```
+
+***SSH -> https***
+
+```git
+git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+```
+
+
 
 
 
