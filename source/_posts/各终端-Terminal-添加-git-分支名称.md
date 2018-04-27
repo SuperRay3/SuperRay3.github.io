@@ -39,11 +39,7 @@ categories:
   fi
   unset color_prompt force_color_prompt
 ```
-<<<<<<< HEAD
-reflect is here
-=======
-test reflect
->>>>>>> 2a4de5f24f190d7458238d5f0a132bba86e80c63
+test conflict
 ## reference
 
 [Git branch name in Linux/Mac Terminal](https://gist.github.com/ankurk91/2efe14650d54d7d09528cea3ed432f6d)
