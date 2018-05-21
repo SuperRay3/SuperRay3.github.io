@@ -88,7 +88,7 @@ categories:
 # **提交**
 
 `git` 的提交和 `svn` 的提交差别很大，这是由他俩原理决定的。
-
+`
 （未完，后期补）
 
 # **添加 `.gitignore` 文件**
@@ -109,7 +109,7 @@ touch .gitignore  // 创建文件
 
 注: 执行完成后，要定位到 `.gitignore` 文件所在路径进行 `push`
 
-## [撤销修改](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001374831943254ee90db11b13d4ba9a73b9047f4fb968d000)
+# **[撤销修改](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001374831943254ee90db11b13d4ba9a73b9047f4fb968d000)**
 
 `git checkout -- file` 丢弃工作区的修改，产生以下两种情况：
 
@@ -138,6 +138,12 @@ git remote set-url origin git@github.com:USERNAME/REPOSITORY.git
 ```git
 git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
 ```
+
+# **`git pull --rebase`**
+
+在本地进行了多次修改并且事先没有 `git pull` 就直接 `git push` 时会被阻止。这种情况下就需要先 `git pull` 之后才能继续。
+
+[参考](https://www.derekgourlay.com/blog/git-when-to-merge-vs-when-to-rebase)
 
 
 
