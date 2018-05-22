@@ -19,12 +19,11 @@ categories: 烂笔头
 
 我们想要做到的是将外部作用域与内部的作用域分离，然后将外部指令映射到内部指令上。这就用到了指令的 `scope` 属性。
 
-<!-- plunker -->
 
 在 `index.html` 中第一个 `<my-customer></my-customer>` 元素将 `info` 属性绑定了 `naomi` 的值，这是我们已经在 `controller` 中暴露出来的。第二个则是绑定到了 `igor`。
 
 **总而言之，在一个 `controller` 中想要复用同一个 `directive` 就需要在 `directive` 中添加 `scope` 属性**
- 
+
  让我们仔细地分析一下 `scope` 这个属性：
 
  ```js
@@ -53,6 +52,5 @@ scope: {
 
  除了使从指令内部绑定不同作用域数据成为可能以外，使用 `isolate scope`　还有另外的影响。
 
- <!-- plunker -->
 
  就像名字建议的那样，指令的 `scope` 隔绝了一切除了明确添加到　`scope: {}` 对象中的和 `models`。这对于构建可复用的组件是很有帮助的，因为这阻止了一个组件意外的更改　`model` 中的属性
