@@ -84,11 +84,11 @@ baidu_url_submit:
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  - type: git
-    repo: git@47.95.194.167:/home/git/blog.git
-    branch: master
-    ignore_hidden: false
-    message:
+  # - type: git
+  #   repo: git@47.95.194.167:/home/git/blog.git
+  #   branch: master
+  #   ignore_hidden: false
+  #   message:
   - type: git
     repo: git@github.com:SuperRay3/SuperRay3.github.io.git
     branch: master
