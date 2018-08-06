@@ -143,4 +143,6 @@ git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
 
 在本地进行了多次修改并且事先没有 `git pull` 就直接 `git push` 时会被阻止。这种情况下就需要先 `git pull` 之后才能继续。
 
-[参考](https://www.derekgourlay.com/blog/git-when-to-merge-vs-when-to-rebase)
+[reference](https://www.derekgourlay.com/blog/git-when-to-merge-vs-when-to-rebase)
+
+{% post_link 译-何时-merge-与何时-rebase %}
