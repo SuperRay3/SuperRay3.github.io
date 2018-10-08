@@ -1,4 +1,4 @@
-http://hi.thisisray.me/config-git-autocomplete-in-terminal-on-macOS.html
+http://hi.thisisray.me/Mac 环境下为通过 homebrew 安装的 git 添加指令自动补全功能.html
 http://hi.thisisray.me/Javascript-词法作用域和动态作用域.html
 http://hi.thisisray.me/译-何时-merge-与何时-rebase.html
 http://hi.thisisray.me/各终端-Terminal-添加-git-分支名称.html
@@ -20,8 +20,8 @@ http://hi.thisisray.me/github-配置-SSH-Key.html
 http://hi.thisisray.me/git 切换分支.html
 http://hi.thisisray.me/MacOS-下安装配置-jdk.html
 http://hi.thisisray.me/可能这辈子都记不住了.html
-http://hi.thisisray.me/git 实操.html
 http://hi.thisisray.me/浮点数精度丢失问题.html
+http://hi.thisisray.me/git 实操.html
 http://hi.thisisray.me/js-的非数字下标.html
 http://hi.thisisray.me/《图解-HTTP》-（三）-HTTP-报文内的-HTTP-信息.html
 http://hi.thisisray.me/解决-Enter-passphrase-key-问题.html
