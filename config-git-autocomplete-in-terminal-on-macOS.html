@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>config git autocomplete in terminal on macos-Over the mountains, mountains. | 空脑壳</title>
+  <title>mac 环境下为通过 homebrew 安装的 git 添加指令自动补全功能-Over the mountains, mountains. | 空脑壳</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
     <link rel="icon" type="image/x-icon" href="https://myblog-static.oss-cn-beijing.aliyuncs.com/favor-icon/mylogo.png">
@@ -19,18 +19,18 @@
     <meta name="baidu-site-verification" content="vyp41u64K8" />
   
   
-  <meta name="description" content="mac 上的 terminal 竟然不支持 git 指令自动补全（应该不是个人原因），这对于使用 git 管理代码的程序员或多或少是个麻烦，当然解决方案也很简单。  123系统环境：  macOS Hign Sierra  version: 10.13.5">
-<meta name="keywords" content="git,系统配置">
+  <meta name="description" content="本方法目前只针对通过 homebrew 安装的 git。">
+<meta name="keywords" content="git">
 <meta property="og:type" content="article">
-<meta property="og:title" content="config git autocomplete in terminal on macOS">
+<meta property="og:title" content="Mac 环境下为通过 homebrew 安装的 git 添加指令自动补全功能">
 <meta property="og:url" content="http://hi.thisisray.me/config-git-autocomplete-in-terminal-on-macOS.html">
 <meta property="og:site_name" content="空脑壳">
-<meta property="og:description" content="mac 上的 terminal 竟然不支持 git 指令自动补全（应该不是个人原因），这对于使用 git 管理代码的程序员或多或少是个麻烦，当然解决方案也很简单。  123系统环境：  macOS Hign Sierra  version: 10.13.5">
+<meta property="og:description" content="本方法目前只针对通过 homebrew 安装的 git。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-10-08T03:26:35.142Z">
+<meta property="og:updated_time" content="2018-10-08T06:20:57.441Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="config git autocomplete in terminal on macOS">
-<meta name="twitter:description" content="mac 上的 terminal 竟然不支持 git 指令自动补全（应该不是个人原因），这对于使用 git 管理代码的程序员或多或少是个麻烦，当然解决方案也很简单。  123系统环境：  macOS Hign Sierra  version: 10.13.5">
+<meta name="twitter:title" content="Mac 环境下为通过 homebrew 安装的 git 添加指令自动补全功能">
+<meta name="twitter:description" content="本方法目前只针对通过 homebrew 安装的 git。">
   
     <link rel="alternate" href="/atom.xml" title="空脑壳" type="application/atom+xml">
   
@@ -180,7 +180,7 @@
         
   
     <h1 class="thumb" class="article-title" itemprop="name">
-      config git autocomplete in terminal on macOS
+      Mac 环境下为通过 homebrew 安装的 git 添加指令自动补全功能
     </h1>
   
 
@@ -199,7 +199,7 @@
     <div class="article-count">
       
   <div class="count-wrapper">
-    <span class="post-count">本文共 205 字</span>
+    <span class="post-count">本文共 122 字</span>
     <span class="post-count">预计花费 1 分钟</span>
   </div>
 
@@ -207,26 +207,16 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<p>mac 上的 terminal 竟然不支持 <code>git</code> 指令自动补全（应该不是个人原因），这对于使用 <code>git</code> 管理代码的程序员或多或少是个麻烦，当然解决方案也很简单。</p>
+<p>本方法目前只针对通过 <code>homebrew</code> 安装的 <code>git</code>。</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">系统环境：</span><br><span class="line">  macOS Hign Sierra</span><br><span class="line">  version: 10.13.5</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-<h2 id="下载-bash-文件"><a href="#下载-bash-文件" class="headerlink" title="下载 bash 文件"></a>下载 bash 文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -O https://raw.github.com/git/git/master/contrib/completion/git-completion.bash</span><br></pre></td></tr></table></figure>
-<p>可能是自己网络的原因，通过上述指令下载下来的文件总是空文件。和我一样的同学可以直接将链接粘贴到浏览器地址栏，然后 <code>cmd + A &amp; cmd + C</code> 。</p>
-<p>找一个喜欢的文件夹，新建 <code>.bash</code> 文件，并将刚才的内容粘贴进文件中。</p>
-<h2 id="source"><a href="#source" class="headerlink" title="source"></a>source</h2><ul>
-<li><p>打开 <code>terminal</code></p>
-</li>
-<li><p>一路 <code>cd</code> 定位到刚才的文件位置</p>
-</li>
-<li><p>运行 <code>source &lt;filename&gt;</code></p>
-</li>
-<li><p>重启 <code>terminal</code></p>
-</li>
-<li><p>done!</p>
-<h2 id="reference"><a href="#reference" class="headerlink" title="reference"></a>reference</h2><p><a href="https://stackoverflow.com/questions/4569463/autocomplete-git-in-mac-os-not-working#" target="_blank" rel="noopener">autocompelet git on mac OS</a></p>
-</li>
-</ul>
+<h1 id="使用-homebrew-安装-git-bash-completion"><a href="#使用-homebrew-安装-git-bash-completion" class="headerlink" title="使用 homebrew 安装 git bash-completion"></a>使用 <code>homebrew</code> 安装 <code>git bash-completion</code></h1><p>如果机子还未安装 <code>homebrew</code>，打开终端并输入下面这条命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/bin/ruby -e <span class="string">"<span class="variable">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)</span>"</span></span><br></pre></td></tr></table></figure>
+<p><br>如果机子已经安装 <code>homebrew</code>， 则直接运行下面这条指令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install git bash-completion</span><br></pre></td></tr></table></figure>
+<h1 id="修改-bash-profile"><a href="#修改-bash-profile" class="headerlink" title="修改 ~/.bash_profile"></a>修改 <code>~/.bash_profile</code></h1><p>在 <code>~/.bash_profile</code> 中添加下方代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">if [ -f $(brew --prefix)/etc/bash_completion ]; then</span><br><span class="line">    . $(brew --prefix)/etc/bash_completion</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://stackoverflow.com/questions/14970728/homebrew-s-git-not-using-completion" target="_blank" rel="noopener">Homebrew’s <code>git</code> not using completion – stackoverflow</a></p>
 
       
     </div>
@@ -272,7 +262,7 @@ var a = new Donate({
 
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/系统配置/">系统配置</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
 
     </footer>
   </div>
@@ -297,7 +287,7 @@ var a = new Donate({
     <div id="toc" class="toc-article">
     <strong class="toc-title">Contents</strong>
     
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#下载-bash-文件"><span class="nav-number">1.</span> <span class="nav-text">下载 bash 文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#source"><span class="nav-number">2.</span> <span class="nav-text">source</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#reference"><span class="nav-number">3.</span> <span class="nav-text">reference</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#使用-homebrew-安装-git-bash-completion"><span class="nav-number">1.</span> <span class="nav-text">使用 homebrew 安装 git bash-completion</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#修改-bash-profile"><span class="nav-number">2.</span> <span class="nav-text">修改 ~/.bash_profile</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考"><span class="nav-number">3.</span> <span class="nav-text">参考</span></a></li></ol>
     
     </div>
   </aside>

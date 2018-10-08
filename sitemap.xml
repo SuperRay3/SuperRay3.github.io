@@ -2,7 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://hi.thisisray.me/tags/index.html</loc>
+    <loc>http://hi.thisisray.me/config-git-autocomplete-in-terminal-on-macOS.html</loc>
+    
+    <lastmod>2018-10-08T06:20:57.441Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://hi.thisisray.me/categories/index.html</loc>
     
     <lastmod>2018-10-08T03:26:35.146Z</lastmod>
     
@@ -16,23 +23,9 @@
   </url>
   
   <url>
-    <loc>http://hi.thisisray.me/categories/index.html</loc>
+    <loc>http://hi.thisisray.me/tags/index.html</loc>
     
     <lastmod>2018-10-08T03:26:35.146Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://hi.thisisray.me/%E6%B5%AE%E7%82%B9%E6%95%B0%E7%B2%BE%E5%BA%A6%E4%B8%A2%E5%A4%B1%E9%97%AE%E9%A2%98.html</loc>
-    
-    <lastmod>2018-10-08T03:26:35.145Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://hi.thisisray.me/%E8%AF%91-%E4%BD%95%E6%97%B6-merge-%E4%B8%8E%E4%BD%95%E6%97%B6-rebase.html</loc>
-    
-    <lastmod>2018-10-08T03:26:35.145Z</lastmod>
     
   </url>
   
@@ -45,6 +38,20 @@
   
   <url>
     <loc>http://hi.thisisray.me/%E8%A7%A3%E5%86%B3-Enter-passphrase-key-%E9%97%AE%E9%A2%98.html</loc>
+    
+    <lastmod>2018-10-08T03:26:35.145Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://hi.thisisray.me/%E6%B5%AE%E7%82%B9%E6%95%B0%E7%B2%BE%E5%BA%A6%E4%B8%A2%E5%A4%B1%E9%97%AE%E9%A2%98.html</loc>
+    
+    <lastmod>2018-10-08T03:26:35.145Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://hi.thisisray.me/%E8%AF%91-%E4%BD%95%E6%97%B6-merge-%E4%B8%8E%E4%BD%95%E6%97%B6-rebase.html</loc>
     
     <lastmod>2018-10-08T03:26:35.145Z</lastmod>
     
@@ -65,20 +72,6 @@
   </url>
   
   <url>
-    <loc>http://hi.thisisray.me/%E5%90%84%E7%BB%88%E7%AB%AF-Terminal-%E6%B7%BB%E5%8A%A0-git-%E5%88%86%E6%94%AF%E5%90%8D%E7%A7%B0.html</loc>
-    
-    <lastmod>2018-10-08T03:26:35.144Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://hi.thisisray.me/%E5%8F%AF%E8%83%BD%E8%BF%99%E8%BE%88%E5%AD%90%E9%83%BD%E8%AE%B0%E4%B8%8D%E4%BD%8F%E4%BA%86.html</loc>
-    
-    <lastmod>2018-10-08T03:26:35.144Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://hi.thisisray.me/%E5%8E%9F%E5%9E%8B%E4%B8%8E%E5%8E%9F%E5%9E%8B%E9%93%BE.html</loc>
     
     <lastmod>2018-10-08T03:26:35.144Z</lastmod>
@@ -93,7 +86,21 @@
   </url>
   
   <url>
-    <loc>http://hi.thisisray.me/nginx-%E9%85%8D%E7%BD%AE-HTTPS.html</loc>
+    <loc>http://hi.thisisray.me/%E5%8F%AF%E8%83%BD%E8%BF%99%E8%BE%88%E5%AD%90%E9%83%BD%E8%AE%B0%E4%B8%8D%E4%BD%8F%E4%BA%86.html</loc>
+    
+    <lastmod>2018-10-08T03:26:35.144Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://hi.thisisray.me/%E5%90%84%E7%BB%88%E7%AB%AF-Terminal-%E6%B7%BB%E5%8A%A0-git-%E5%88%86%E6%94%AF%E5%90%8D%E7%A7%B0.html</loc>
+    
+    <lastmod>2018-10-08T03:26:35.144Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://hi.thisisray.me/webpack-series.html</loc>
     
     <lastmod>2018-10-08T03:26:35.143Z</lastmod>
     
@@ -107,14 +114,7 @@
   </url>
   
   <url>
-    <loc>http://hi.thisisray.me/%E3%80%8AJavascript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1-%E3%80%8B-%EF%BC%88%E4%B8%80%EF%BC%89-%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B.html</loc>
-    
-    <lastmod>2018-10-08T03:26:35.143Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://hi.thisisray.me/webpack-series.html</loc>
+    <loc>http://hi.thisisray.me/nginx-%E9%85%8D%E7%BD%AE-HTTPS.html</loc>
     
     <lastmod>2018-10-08T03:26:35.143Z</lastmod>
     
@@ -124,6 +124,20 @@
     <loc>http://hi.thisisray.me/reflow%EF%BC%88%E9%87%8D%E6%8E%92%EF%BC%89-%E5%92%8C-repaint%EF%BC%88%E9%87%8D%E7%BB%98%EF%BC%89.html</loc>
     
     <lastmod>2018-10-08T03:26:35.143Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://hi.thisisray.me/%E3%80%8AJavascript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1-%E3%80%8B-%EF%BC%88%E4%B8%80%EF%BC%89-%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B.html</loc>
+    
+    <lastmod>2018-10-08T03:26:35.143Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://hi.thisisray.me/github-%E9%85%8D%E7%BD%AE-SSH-Key.html</loc>
+    
+    <lastmod>2018-10-08T03:26:35.142Z</lastmod>
     
   </url>
   
@@ -142,23 +156,16 @@
   </url>
   
   <url>
-    <loc>http://hi.thisisray.me/config-git-autocomplete-in-terminal-on-macOS.html</loc>
-    
-    <lastmod>2018-10-08T03:26:35.142Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://hi.thisisray.me/github-%E9%85%8D%E7%BD%AE-SSH-Key.html</loc>
-    
-    <lastmod>2018-10-08T03:26:35.142Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://hi.thisisray.me/js-%E7%9A%84%E9%9D%9E%E6%95%B0%E5%AD%97%E4%B8%8B%E6%A0%87.html</loc>
     
     <lastmod>2018-10-08T03:26:35.142Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://hi.thisisray.me/Mac-%E4%B8%8B%E5%AE%89%E8%A3%85-eclipse-Java-EE-%E5%A5%87%E6%80%AA%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html</loc>
+    
+    <lastmod>2018-10-08T03:26:35.141Z</lastmod>
     
   </url>
   
@@ -184,21 +191,14 @@
   </url>
   
   <url>
-    <loc>http://hi.thisisray.me/MacBook-%E4%B8%8Bnpm-install-Please-try-running-this-command-again-as-root-Administrator.html</loc>
-    
-    <lastmod>2018-10-08T03:26:35.141Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://hi.thisisray.me/Mac-%E4%B8%8B%E5%AE%89%E8%A3%85-eclipse-Java-EE-%E5%A5%87%E6%80%AA%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html</loc>
-    
-    <lastmod>2018-10-08T03:26:35.141Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://hi.thisisray.me/Javascript-%E8%AF%8D%E6%B3%95%E4%BD%9C%E7%94%A8%E5%9F%9F%E5%92%8C%E5%8A%A8%E6%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F.html</loc>
+    
+    <lastmod>2018-10-08T03:26:35.141Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://hi.thisisray.me/MacBook-%E4%B8%8Bnpm-install-Please-try-running-this-command-again-as-root-Administrator.html</loc>
     
     <lastmod>2018-10-08T03:26:35.141Z</lastmod>
     
@@ -233,14 +233,14 @@
   </url>
   
   <url>
-    <loc>http://hi.thisisray.me/Angular-Directive.html</loc>
+    <loc>http://hi.thisisray.me/AngularJS-Service%E3%80%81Factory%E3%80%81Providers.html</loc>
     
     <lastmod>2018-10-08T03:26:35.139Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://hi.thisisray.me/AngularJS-Service%E3%80%81Factory%E3%80%81Providers.html</loc>
+    <loc>http://hi.thisisray.me/Angular-Directive.html</loc>
     
     <lastmod>2018-10-08T03:26:35.139Z</lastmod>
     
