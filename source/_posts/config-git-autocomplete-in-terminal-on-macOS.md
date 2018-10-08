@@ -1,42 +1,50 @@
 ---
-title: config git autocomplete in terminal on macOS
+title: Mac 环境下为通过 homebrew 安装的 git 添加指令自动补全功能
 date: 2018-06-29 15:45:33
 tags:
   - git
-  - 系统配置
 categories: 烂笔头
 ---
 
-> mac 上的 terminal 竟然不支持 `git` 指令自动补全（应该不是个人原因），这对于使用 `git` 管理代码的程序员或多或少是个麻烦，当然解决方案也很简单。
-
-```
-  系统环境：
-    macOS Hign Sierra
-    version: 10.13.5
-```
+> 本方法目前只针对通过 `homebrew` 安装的 `git`。
 
 <!-- more -->
 
-## 下载 bash 文件
+# 使用 `homebrew` 安装 `git bash-completion`
+
+如果机子还未安装 `homebrew`，打开终端并输入下面这条命令：
+
+```bash
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+如果机子已经安装 `homebrew`， 则直接运行下面这条指令：
+
+```bash
+brew install git bash-completion
+```
+
+# 修改 `~/.bash_profile`
+
+在 `~/.bash_profile` 中添加下方代码：
 
 ```
-curl -O https://raw.github.com/git/git/master/contrib/completion/git-completion.bash
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
 ```
-可能是自己网络的原因，通过上述指令下载下来的文件总是空文件。和我一样的同学可以直接将链接粘贴到浏览器地址栏，然后 `cmd + A & cmd + C` 。
 
-找一个喜欢的文件夹，新建 `.bash` 文件，并将刚才的内容粘贴进文件中。
 
-## source
- - 打开 `terminal`
+# 参考
 
- - 一路 `cd` 定位到刚才的文件位置
+[Homebrew’s `git` not using completion -- stackoverflow](https://stackoverflow.com/questions/14970728/homebrew-s-git-not-using-completion)
 
- - 运行 `source <filename>`
 
- - 重启 `terminal`
 
- - done!
 
- ## reference
 
- [autocompelet git on mac OS](https://stackoverflow.com/questions/4569463/autocomplete-git-in-mac-os-not-working#)
+
+
+
+
+
