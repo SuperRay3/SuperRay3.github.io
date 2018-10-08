@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>空脑壳</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <link rel="icon" type="image/x-icon" href="https://myblog-static.oss-cn-beijing.aliyuncs.com/favor-icon/mylogo.png">
+  
+
+  
+    <meta name="keywords" content="雷雷雷,空脑壳,前端,HTML,CSS,JS,生活" />
+  
+  
+    <meta name="google-site-verification" content="pTRbturh_lAK5OIXLwAO7OKRMaEgSX2MtqqFrk1AMRM" />
+  
+  
+    <meta name="baidu-site-verification" content="vyp41u64K8" />
+  
+  
+  <meta name="description" content="Over the mountains, mountains.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="空脑壳">
+<meta property="og:url" content="http://hi.thisisray.me/index.html">
+<meta property="og:site_name" content="空脑壳">
+<meta property="og:description" content="Over the mountains, mountains.">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="空脑壳">
+<meta name="twitter:description" content="Over the mountains, mountains.">
+  
+    <link rel="alternate" href="/atom.xml" title="空脑壳" type="application/atom+xml">
+  
+
+  
+
+  <link rel="apple-touch-icon" href="/https://myblog-static.oss-cn-beijing.aliyuncs.com/favor-icon/avatar.jpg">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/jquery-3.1.1.min.js"></script>
+  <script src="/js/bootstrap.js"></script>
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+
+  
+    <link rel="stylesheet" href="/css/home.css" >
+  
+
+  
+
+  
+
+  
+
+  
+    <link rel="stylesheet" href="/css/vdonate.css" >
+  
+
+</head>
+
+
+
+  <a href="https://github.com/SuperRay3"><img style="z-index: 100;position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/c6625ac1f3ee0a12250227cf83ce904423abf351/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png"></a>
+
+
+
+  <canvas id="canvas" style="z-index: 1; position: fixed; top:0; left: 0;"></canvas>
+  <script src="/js/canvas-bg.js"></script>
+
+
+
+  <body>
+
+
+  
+    <header id="header">
+
+	<!-- 背景图模式 -->
+	
+
+    
+      <div id="intrologo" class="intro-logo" style="background-position:center; background-repeat:no-repeat; background-image: url(); background-size: auto 100%;">
+
+      <!-- Support rolling -->
+        <!-- Don't rolling -->
+        <script>
+            var imgUrls = "https://myblog-static.oss-cn-beijing.aliyuncs.com/index-banner/js-rock.gif".split(",");
+            var random = Math.floor((Math.random() * imgUrls.length ));
+            if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+              document.getElementById("intrologo").style.backgroundImage='url(' + imgUrls[random] + ')';
+            } else {
+              document.getElementById("intrologo").style.backgroundImage='url(/' + imgUrls[random] + ')';
+            }
+        </script>
+      
+
+    
+
+
+
+    <canvas width="100%" height="100%"></canvas>
+    <script>
+      var c = document.getElementsByTagName('canvas')[0],
+          x = c.getContext('2d'),
+          w = window.innerWidth,
+          h = window.innerHeight,
+          pr = window.devicePixelRatio || 1,
+          f = 90,
+          q,
+          m = Math,
+          r = 0,
+          u = m.PI*2,
+          v = m.cos,
+          z = m.random
+      c.width = w*pr
+      c.height = h*pr
+      x.scale(pr, pr)
+      x.globalAlpha = 0.6
+
+      <!-- 折线Polyline背景 -->
+      
+    </script>
+
+
+    
+      <div id="homelogo" class="homelogo" style="background: rgba(255,255,255,1);">
+    
+
+        
+          <div class="homelogoback"  style="border: 1px solid #404040;" >
+            <h1><a href="#content" id="logo">空脑壳</a></h1>
+            <h3>Over the mountains, mountains.</h3>
+            <h5>雷雷雷</h5>
+            <!-- <p><a href="https://github.com/iTimeTraveler" target="_blank">Github</a></p> -->
+          </div>
+        
+
+    </div>
+  </div>
+
+  <!-- 自适应主页背景大图 -->
+  
+    <script>
+        var img = new Image();
+        var intrologodiv = document.getElementById("intrologo");
+        img.src = intrologodiv.style.backgroundImage.replace('url(','').replace(')','').replace(/\"/gi, "");
+        img.onload=function(){
+          if (img.width / img.height <= document.body.clientWidth / document.body.clientHeight) {
+            intrologodiv.style.backgroundSize = "100% auto";
+          } else {
+            intrologodiv.style.backgroundSize = "auto 100%";
+          }
+        };
+    </script>
+ 
+
+ <!-- home_logo_image居中 -->
+ 
+    <script>
+        var homelogodiv = document.getElementById("homelogo");
+        if (document.all.homelogo.offsetWidth > document.body.clientWidth) {
+          homelogodiv.style.width = document.body.clientWidth + "px";
+          homelogodiv.style.marginLeft = document.body.clientWidth * -0.5 + "px";
+        } else {
+          homelogodiv.style.width = homelogodiv.clientWidth  + "px";
+          homelogodiv.style.marginLeft = (homelogodiv.clientWidth)  * -0.5 + "px";
+        }
+    </script>
+  
+
+  <div class="intro-navigate">
+      <p class="navigater-list">
+        
+          <a id="beautifont" class="main-nav-link" href="/">Home</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/archives">Archives</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/categories">Categories</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/tags">Tags</a>
+        
+      </p>
+  </div>
+
+</header>
+  
+  <div id="container">
+    <div id="wrap">
+      
+
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;">
+  
+    <article id="post-config-git-autocomplete-in-terminal-on-macOS"  class="article article-type-post article-home-true" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/config-git-autocomplete-in-terminal-on-macOS.html">config git autocomplete in terminal on macOS</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/config-git-autocomplete-in-terminal-on-macOS.html" class="article-date">
+	  <time datetime="2018-06-29T07:45:33.000Z" itemprop="datePublished">2018-06-29</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/烂笔头/">烂笔头</a>
+
+    </div>
+    <div class="article-count">
+      
+  <div class="count-wrapper">
+    <span class="post-count">本文共 205 字</span>
+    <span class="post-count">预计花费 1 分钟</span>
+  </div>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>mac 上的 terminal 竟然不支持 <code>git</code> 指令自动补全（应该不是个人原因），这对于使用 <code>git</code> 管理代码的程序员或多或少是个麻烦，当然解决方案也很简单。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">系统环境：</span><br><span class="line">  macOS Hign Sierra</span><br><span class="line">  version: 10.13.5</span><br></pre></td></tr></table></figure>
+        <!-- 
+mac 上的 terminal 竟然不支持 git 指令自动补全（应该不是个人原因），这对于使用 git 管理代码的程序员或多或少是个麻烦，当然解决方案也很简单。
+
+123系统环境：  macOS Hign Sierra  version: 10.13.5
+
+下载 bash 文件1curl -O https://raw.github.com/git/git/master/contrib/c......  -->
+        <p class="article-more-link">
+          <a href="/config-git-autocomplete-in-terminal-on-macOS.html#more">Read More</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/系统配置/">系统配置</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-Javascript-词法作用域和动态作用域"  class="article article-type-post article-home-true" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/Javascript-词法作用域和动态作用域.html">Javascript 词法作用域和动态作用域</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/Javascript-词法作用域和动态作用域.html" class="article-date">
+	  <time datetime="2018-05-28T02:24:28.000Z" itemprop="datePublished">2018-05-28</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/烂笔头/">烂笔头</a>
+
+    </div>
+    <div class="article-count">
+      
+  <div class="count-wrapper">
+    <span class="post-count">本文共 54 字</span>
+    <span class="post-count">预计花费 1 分钟</span>
+  </div>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <a id="more"></a>
+<h2 id="作用域（scope）"><a href="#作用域（scope）" class="headerlink" title="作用域（scope）"></a>作用域（scope）</h2><ul>
+<li><p>作用域是 <strong>定义变量的区域</strong>， 规定了如何查找变量（即正在执行的代码对变量的访问权限）</p>
+</li>
+<li><p>Javascript 采用 <strong>词法作用域</strong>（即 <strong><em>静态作用域</em></strong>）</p>
+</li>
+</ul>
+<p>##</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-译-何时-merge-与何时-rebase"  class="article article-type-post article-home-true" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/译-何时-merge-与何时-rebase.html">[译] 何时 merge 与何时 rebase</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/译-何时-merge-与何时-rebase.html" class="article-date">
+	  <time datetime="2018-05-22T03:35:49.000Z" itemprop="datePublished">2018-05-22</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/烂笔头/">烂笔头</a>
+
+    </div>
+    <div class="article-count">
+      
+  <div class="count-wrapper">
+    <span class="post-count">本文共 0 字</span>
+    <span class="post-count">预计花费 1 分钟</span>
+  </div>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-各终端-Terminal-添加-git-分支名称"  class="article article-type-post article-home-true" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/各终端-Terminal-添加-git-分支名称.html">各终端 Terminal 添加 git 分支名称</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/各终端-Terminal-添加-git-分支名称.html" class="article-date">
+	  <time datetime="2018-04-27T09:39:51.000Z" itemprop="datePublished">2018-04-27</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/烂笔头/">烂笔头</a>
+
+    </div>
+    <div class="article-count">
+      
+  <div class="count-wrapper">
+    <span class="post-count">本文共 190 字</span>
+    <span class="post-count">预计花费 1 分钟</span>
+  </div>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>在终端进行 git 操作的时候，难免会进行分支的切换。切来切去的就会忘记当前所在的分支了。下面我们就在终端中加入 git 的分支信息。</p>
+</blockquote>
+        <!-- 
+在终端进行 git 操作的时候，难免会进行分支的切换。切来切去的就会忘记当前所在的分支了。下面我们就在终端中加入 git 的分支信息。
+
+
+Mac OS在 ~/.bash_profile 文件中添加以下代码：
+12345# Show current git branch nameparse_git_branch() &#123;    git branch 2&gt; /dev/null ......  -->
+        <p class="article-more-link">
+          <a href="/各终端-Terminal-添加-git-分支名称.html#more">Read More</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-Angular-Directive"  class="article article-type-post article-home-true" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/Angular-Directive.html">Angular Directive</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/Angular-Directive.html" class="article-date">
+	  <time datetime="2018-04-27T05:54:54.000Z" itemprop="datePublished">2018-04-27</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/烂笔头/">烂笔头</a>
+
+    </div>
+    <div class="article-count">
+      
+  <div class="count-wrapper">
+    <span class="post-count">本文共 482 字</span>
+    <span class="post-count">预计花费 2 分钟</span>
+  </div>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>翻译自 <a href="https://code.angularjs.org/1.5.8/docs/guide/directive" target="_blank" rel="noopener">Directives</a></p>
+</blockquote>
+        <!-- 
+翻译自 Directives
+
+
+隔离指令的作用域(scope)我们上面的 myCustomer 指令已经很棒了，但是它有个致命的缺陷：只能在给定的作用域里使用它一次。
+上述的缺陷就导致了需要去额外创建多个不同的 controller 来达到复用指令的目的。这显然不是好的解决方案。
+我们想要做到的是将外部作用域与内部的作用域分离，然后将外部指令映射到内部指令上。这就用到了指令的 scope......  -->
+        <p class="article-more-link">
+          <a href="/Angular-Directive.html#more">Read More</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AngularJS/">AngularJS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-webpack-series"  class="article article-type-post article-home-true" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/webpack-series.html">webpack series</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/webpack-series.html" class="article-date">
+	  <time datetime="2018-04-24T13:46:57.000Z" itemprop="datePublished">2018-04-24</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/烂笔头/">烂笔头</a>
+
+    </div>
+    <div class="article-count">
+      
+  <div class="count-wrapper">
+    <span class="post-count">本文共 266 字</span>
+    <span class="post-count">预计花费 1 分钟</span>
+  </div>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>买了本掘金小册 《使用 webpack 定制前端开发环境》，决定跟着学一遍 webpack。在此不定期打卡记录一下。</p>
+</blockquote>
+        <!-- 
+买了本掘金小册 《使用 webpack 定制前端开发环境》，决定跟着学一遍 webpack。在此不定期打卡记录一下。
+
+
+webpack 的概念和基础使用loaderwebpack 使用 loader 将不同格式的文件转换为 webpack 所支持的 模块。
+支撑着 webpack 处理文件的多样性。
+plugin用于处理 loader 功能以外的其他任务，例如： 压缩 JS
+webpac......  -->
+        <p class="article-more-link">
+          <a href="/webpack-series.html#more">Read More</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/webpack/">webpack</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-Dive-into-FE-router"  class="article article-type-post article-home-true" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/Dive-into-FE-router.html">Dive into FE-router</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/Dive-into-FE-router.html" class="article-date">
+	  <time datetime="2018-04-24T09:57:31.000Z" itemprop="datePublished">2018-04-24</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/烂笔头/">烂笔头</a>
+
+    </div>
+    <div class="article-count">
+      
+  <div class="count-wrapper">
+    <span class="post-count">本文共 0 字</span>
+    <span class="post-count">预计花费 1 分钟</span>
+  </div>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/FE-router/">FE-router</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-AngularJS-Service、Factory、Providers"  class="article article-type-post article-home-true" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/AngularJS-Service、Factory、Providers.html">AngularJS: Service、Factory、Provider</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/AngularJS-Service、Factory、Providers.html" class="article-date">
+	  <time datetime="2018-04-24T00:49:12.000Z" itemprop="datePublished">2018-04-24</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/烂笔头/">烂笔头</a>
+
+    </div>
+    <div class="article-count">
+      
+  <div class="count-wrapper">
+    <span class="post-count">本文共 466 字</span>
+    <span class="post-count">预计花费 3 分钟</span>
+  </div>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>最近在接触 <code>AngularJS</code>， 被晦涩难懂的各种概念搞得头疼脑涨。<code>Service</code>、<code>Factory</code>、<code>Provider</code> 就是其中几个。</p>
+</blockquote>
+        <!-- 
+最近在接触 AngularJS， 被晦涩难懂的各种概念搞得头疼脑涨。Service、Factory、Provider 就是其中几个。
+
+
+FactorySyntax: module.factory(&#39;factoryName&#39;, function)
+Result: the value that is returned by invoking the function refe......  -->
+        <p class="article-more-link">
+          <a href="/AngularJS-Service、Factory、Providers.html#more">Read More</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AngularJS/">AngularJS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-数组和它的方法们"  class="article article-type-post article-home-true" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/数组和它的方法们.html">数组和它的方法们</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/数组和它的方法们.html" class="article-date">
+	  <time datetime="2018-03-11T06:22:00.000Z" itemprop="datePublished">2018-03-11</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/烂笔头/">烂笔头</a>
+
+    </div>
+    <div class="article-count">
+      
+  <div class="count-wrapper">
+    <span class="post-count">本文共 566 字</span>
+    <span class="post-count">预计花费 2 分钟</span>
+  </div>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>认识一下数组和它的朋友们</p>
+</blockquote>
+        <!-- 
+认识一下数组和它的朋友们
+
+
+全家福总体上可将方法分为两大类： 改变原数组（mutator methods） 和 不变原数组（accessor methods）
+Mutator methods
+
+copyWithin: 复制指定位置的元素到指定位置，返回修改过后的数组
+
+fill 用指定元素替换指定位置元素, 返回修改过后的数组
+
+pop 移除最后一个元素，并返回它
+
+push 数组尾部追......  -->
+        <p class="article-more-link">
+          <a href="/数组和它的方法们.html#more">Read More</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-面试中遇到的问题"  class="article article-type-post article-home-true" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/面试中遇到的问题.html">面试中遇到的问题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/面试中遇到的问题.html" class="article-date">
+	  <time datetime="2018-03-11T06:12:31.000Z" itemprop="datePublished">2018-03-11</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/烂笔头/">烂笔头</a>
+
+    </div>
+    <div class="article-count">
+      
+  <div class="count-wrapper">
+    <span class="post-count">本文共 516 字</span>
+    <span class="post-count">预计花费 2 分钟</span>
+  </div>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>收集一些面试中的问题，变得更强。</p>
+</blockquote>
+        <!-- 
+收集一些面试中的问题，变得更强。
+
+
+数组都有哪些方法？篇幅有点长， 单开一篇文章。 ➡️ 数组和它的方法们
+官方文档
+文中另提到利用数组模拟队列
+数组处理
+
+将字符串改写为驼峰命名方式。例如： 输入 &#39;get_user_by_id&#39;, 输出 getUserById
+
+
+
+1234567891011121314function transfor (str) &#123;......  -->
+        <p class="article-more-link">
+          <a href="/面试中遇到的问题.html#more">Read More</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/job-interview/">job interview</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+
+
+  <nav id="page-nav">
+    
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+  </nav>
+
+</section>
+        
+      </div>
+      
+        <div align="center" style="margin-top: 30px;"><hr class="hr" style="margin:0px; height:3px;"></div>
+      
+      <footer id="footer">
+  
+
+  <div class="container">
+      	<div class="row">
+	      <!-- <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p> -->
+	      <p id="copyRightEn">Copyright &copy; 2017 - 2018 空脑壳 All Rights Reserved.</p>
+        <p>冀ICP备17022284号</p>
+		</div>
+
+
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+    var allheader = document.getElementById("allheader");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight + "px";
+    if (allheader != null) {
+      contentdiv.style.minHeight = document.body.offsetHeight - allheader.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    } else {
+      contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    }
+</script>
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+  <script src="/js/canvas-bg.js"></script>
+
+
+<script src="/js/scripts.js"></script>
+
+
+  <script src="/js/home.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="myModalLabel">设置</h2>
+      </div>
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+
+
+      <div class="modal-body">
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
+              正文字号大小
+            </a>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            您已调整页面字体大小
+          </div>
+        </div>
+      
+
+
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="javascript:setBackground();" aria-expanded="true" aria-controls="collapseTwo">
+              夜间护眼模式
+            </a>
+        </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            夜间模式已经开启，再次单击按钮即可关闭 
+          </div>
+        </div>
+
+        <div>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关 于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            空脑壳
+          </div>
+          <div class="panel-body">
+            Copyright © 2018 雷雷雷 All Rights Reserved.
+          </div>
+        </div>
+      </div>
+
+
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
+</body>
+</html>

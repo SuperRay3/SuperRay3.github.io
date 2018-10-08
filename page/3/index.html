@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>空脑壳</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <link rel="icon" type="image/x-icon" href="https://myblog-static.oss-cn-beijing.aliyuncs.com/favor-icon/mylogo.png">
+  
+
+  
+    <meta name="keywords" content="雷雷雷,空脑壳,前端,HTML,CSS,JS,生活" />
+  
+  
+    <meta name="google-site-verification" content="pTRbturh_lAK5OIXLwAO7OKRMaEgSX2MtqqFrk1AMRM" />
+  
+  
+    <meta name="baidu-site-verification" content="vyp41u64K8" />
+  
+  
+  <meta name="description" content="Over the mountains, mountains.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="空脑壳">
+<meta property="og:url" content="http://hi.thisisray.me/page/3/index.html">
+<meta property="og:site_name" content="空脑壳">
+<meta property="og:description" content="Over the mountains, mountains.">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="空脑壳">
+<meta name="twitter:description" content="Over the mountains, mountains.">
+  
+    <link rel="alternate" href="/atom.xml" title="空脑壳" type="application/atom+xml">
+  
+
+  
+
+  <link rel="apple-touch-icon" href="/https://myblog-static.oss-cn-beijing.aliyuncs.com/favor-icon/avatar.jpg">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/jquery-3.1.1.min.js"></script>
+  <script src="/js/bootstrap.js"></script>
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+
+  
+    <link rel="stylesheet" href="/css/home.css" >
+  
+
+  
+
+  
+
+  
+
+  
+    <link rel="stylesheet" href="/css/vdonate.css" >
+  
+
+</head>
+
+
+
+  <a href="https://github.com/SuperRay3"><img style="z-index: 100;position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/c6625ac1f3ee0a12250227cf83ce904423abf351/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png"></a>
+
+
+
+  <canvas id="canvas" style="z-index: 1; position: fixed; top:0; left: 0;"></canvas>
+  <script src="/js/canvas-bg.js"></script>
+
+
+
+  <body>
+
+
+  
+    <header id="header">
+
+	<!-- 背景图模式 -->
+	
+
+    
+      <div id="intrologo" class="intro-logo" style="background-position:center; background-repeat:no-repeat; background-image: url(); background-size: auto 100%;">
+
+      <!-- Support rolling -->
+        <!-- Don't rolling -->
+        <script>
+            var imgUrls = "https://myblog-static.oss-cn-beijing.aliyuncs.com/index-banner/js-rock.gif".split(",");
+            var random = Math.floor((Math.random() * imgUrls.length ));
+            if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+              document.getElementById("intrologo").style.backgroundImage='url(' + imgUrls[random] + ')';
+            } else {
+              document.getElementById("intrologo").style.backgroundImage='url(/' + imgUrls[random] + ')';
+            }
+        </script>
+      
+
+    
+
+
+
+    <canvas width="100%" height="100%"></canvas>
+    <script>
+      var c = document.getElementsByTagName('canvas')[0],
+          x = c.getContext('2d'),
+          w = window.innerWidth,
+          h = window.innerHeight,
+          pr = window.devicePixelRatio || 1,
+          f = 90,
+          q,
+          m = Math,
+          r = 0,
+          u = m.PI*2,
+          v = m.cos,
+          z = m.random
+      c.width = w*pr
+      c.height = h*pr
+      x.scale(pr, pr)
+      x.globalAlpha = 0.6
+
+      <!-- 折线Polyline背景 -->
+      
+    </script>
+
+
+    
+      <div id="homelogo" class="homelogo" style="background: rgba(255,255,255,1);">
+    
+
+        
+          <div class="homelogoback"  style="border: 1px solid #404040;" >
+            <h1><a href="#content" id="logo">空脑壳</a></h1>
+            <h3>Over the mountains, mountains.</h3>
+            <h5>雷雷雷</h5>
+            <!-- <p><a href="https://github.com/iTimeTraveler" target="_blank">Github</a></p> -->
+          </div>
+        
+
+    </div>
+  </div>
+
+  <!-- 自适应主页背景大图 -->
+  
+    <script>
+        var img = new Image();
+        var intrologodiv = document.getElementById("intrologo");
+        img.src = intrologodiv.style.backgroundImage.replace('url(','').replace(')','').replace(/\"/gi, "");
+        img.onload=function(){
+          if (img.width / img.height <= document.body.clientWidth / document.body.clientHeight) {
+            intrologodiv.style.backgroundSize = "100% auto";
+          } else {
+            intrologodiv.style.backgroundSize = "auto 100%";
+          }
+        };
+    </script>
+ 
+
+ <!-- home_logo_image居中 -->
+ 
+    <script>
+        var homelogodiv = document.getElementById("homelogo");
+        if (document.all.homelogo.offsetWidth > document.body.clientWidth) {
+          homelogodiv.style.width = document.body.clientWidth + "px";
+          homelogodiv.style.marginLeft = document.body.clientWidth * -0.5 + "px";
+        } else {
+          homelogodiv.style.width = homelogodiv.clientWidth  + "px";
+          homelogodiv.style.marginLeft = (homelogodiv.clientWidth)  * -0.5 + "px";
+        }
+    </script>
+  
+
+  <div class="intro-navigate">
+      <p class="navigater-list">
+        
+          <a id="beautifont" class="main-nav-link" href="/">Home</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/archives">Archives</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/categories">Categories</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/tags">Tags</a>
+        
+      </p>
+  </div>
+
+</header>
+  
+  <div id="container">
+    <div id="wrap">
+      
+
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;">
+  
+    <article id="post-MacOS-下安装配置-jdk"  class="article article-type-post article-home-true" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/MacOS-下安装配置-jdk.html">MacOS 下安装配置 jdk</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/MacOS-下安装配置-jdk.html" class="article-date">
+	  <time datetime="2017-08-20T02:12:54.000Z" itemprop="datePublished">2017-08-20</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/烂笔头/">烂笔头</a>
+
+    </div>
+    <div class="article-count">
+      
+  <div class="count-wrapper">
+    <span class="post-count">本文共 438 字</span>
+    <span class="post-count">预计花费 2 分钟</span>
+  </div>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>os: macOS High Sierra version 10.13.3 <br><br>  jdk: 1.7.0_80</p>
+</blockquote>
+        <!-- 
+os: macOS High Sierra version 10.13.3   jdk: 1.7.0_80
+
+
+注： 1.6 版本以下的 jdk oracle 官网没有提供 macOS 版本的下载，如果需要这些版本的需要前往苹果官网进行下载。 点击下载
+这里主要以 1.7 为例
+获取并安装 jdkoracle Java Archive 集合下载
+在上面的链接选择需要的版本进行下载，......  -->
+        <p class="article-more-link">
+          <a href="/MacOS-下安装配置-jdk.html#more">Read More</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MacOS/">MacOS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-可能这辈子都记不住了"  class="article article-type-post article-home-true" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/可能这辈子都记不住了.html">可能这辈子都记不住了</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/可能这辈子都记不住了.html" class="article-date">
+	  <time datetime="2017-08-02T06:56:32.000Z" itemprop="datePublished">2017-08-02</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/烂笔头/">烂笔头</a>
+
+    </div>
+    <div class="article-count">
+      
+  <div class="count-wrapper">
+    <span class="post-count">本文共 2,130 字</span>
+    <span class="post-count">预计花费 9 分钟</span>
+  </div>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>一些琐碎记不住的东西</p>
+</blockquote>
+        <!-- 
+一些琐碎记不住的东西
+
+
+逗号运算符表达形式： 表达式1，表达式2 … 表达式n求解过程： 先计算表达式1，在计算表达式2，以此类推。最终的值为表达式n的值
+
+12345678910var count = 0;console.log(typeof count === "number"); // true , 这个不用解释了console.log(!!typeof count === "nu......  -->
+        <p class="article-more-link">
+          <a href="/可能这辈子都记不住了.html#more">Read More</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-git 实操"  class="article article-type-post article-home-true" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/git 实操.html">git 实操</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/git 实操.html" class="article-date">
+	  <time datetime="2017-08-02T00:29:13.000Z" itemprop="datePublished">2017-08-02</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/烂笔头/">烂笔头</a>
+
+    </div>
+    <div class="article-count">
+      
+  <div class="count-wrapper">
+    <span class="post-count">本文共 1,128 字</span>
+    <span class="post-count">预计花费 4 分钟</span>
+  </div>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>工作中一直用 svn ，用久了之后感觉还是存在一些说不出来的不方便。以前一直想要接触一下 <code>git</code> 但总是因为没有项目可以实践。直到有一天突然想到可以将博文托管到 <code>github</code> 上啊，这样不就拥有了项目并且可以实践了吗，于是也就有了下面这篇连载文章，不定期更新~</p>
+</blockquote>
+        <!-- 
+工作中一直用 svn ，用久了之后感觉还是存在一些说不出来的不方便。以前一直想要接触一下 git 但总是因为没有项目可以实践。直到有一天突然想到可以将博文托管到 github 上啊，这样不就拥有了项目并且可以实践了吗，于是也就有了下面这篇连载文章，不定期更新~
+
+
+官方文档是个好东西，一定要利用起来准备要托管的文件可以是项目代码，也可以是文本、图片任何类型文件。我这里就是几篇博文（mark......  -->
+        <p class="article-more-link">
+          <a href="/git 实操.html#more">Read More</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-浮点数精度丢失问题"  class="article article-type-post article-home-true" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/浮点数精度丢失问题.html">浮点数精度丢失问题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/浮点数精度丢失问题.html" class="article-date">
+	  <time datetime="2017-08-02T00:29:13.000Z" itemprop="datePublished">2017-08-02</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/烂笔头/">烂笔头</a>
+
+    </div>
+    <div class="article-count">
+      
+  <div class="count-wrapper">
+    <span class="post-count">本文共 1,068 字</span>
+    <span class="post-count">预计花费 5 分钟</span>
+  </div>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>前些天在项目中遇到一个离奇的问题<code>&quot;1.38 * 10000 结果竟然是 13799.999999999998&quot;</code> 使出浑身解数后上网搜索了一下，发现大多人说这是 JS 自身的一个 bug。拷贝了一段代码顺利解决问题，但是腾出时间后仔细了解发现问题远不是想象的那样简单。</p>
+</blockquote>
+        <!-- 
+前些天在项目中遇到一个离奇的问题&quot;1.38 * 10000 结果竟然是 13799.999999999998&quot; 使出浑身解数后上网搜索了一下，发现大多人说这是 JS 自身的一个 bug。拷贝了一段代码顺利解决问题，但是腾出时间后仔细了解发现问题远不是想象的那样简单。
+
+
+&emsp;&emsp;问题的根本原因归结于 JavaScript 采用IEEE-754 的标准存储......  -->
+        <p class="article-more-link">
+          <a href="/浮点数精度丢失问题.html#more">Read More</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-js-的非数字下标"  class="article article-type-post article-home-true" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/js-的非数字下标.html">JS 的非数字下标数组</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/js-的非数字下标.html" class="article-date">
+	  <time datetime="2017-07-11T06:11:00.000Z" itemprop="datePublished">2017-07-11</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/烂笔头/">烂笔头</a>
+
+    </div>
+    <div class="article-count">
+      
+  <div class="count-wrapper">
+    <span class="post-count">本文共 336 字</span>
+    <span class="post-count">预计花费 1 分钟</span>
+  </div>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>Javascript 的数组虽然能够通过非数字下标获取数组元素，但是本质上它和 PHP 等语言的关联数组（数组下表不是数字而是字符串）并不一样。详细原理和特殊表现<strong>详见下文</strong>。</p>
+</blockquote>
+        <!-- 
+Javascript 的数组虽然能够通过非数字下标获取数组元素，但是本质上它和 PHP 等语言的关联数组（数组下表不是数字而是字符串）并不一样。详细原理和特殊表现详见下文。
+
+
+“正常人思路”1234var array = [] ;array["a"] = "hello";array["b"] = "world" ;console.log("length:"+array.length);
+......  -->
+        <p class="article-more-link">
+          <a href="/js-的非数字下标.html#more">Read More</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-《图解-HTTP》-（三）-HTTP-报文内的-HTTP-信息"  class="article article-type-post article-home-true" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/《图解-HTTP》-（三）-HTTP-报文内的-HTTP-信息.html">《图解 HTTP》 （三） HTTP 报文内的 HTTP 信息</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/《图解-HTTP》-（三）-HTTP-报文内的-HTTP-信息.html" class="article-date">
+	  <time datetime="2017-06-02T13:24:00.000Z" itemprop="datePublished">2017-06-02</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/烂笔头/">烂笔头</a>
+
+    </div>
+    <div class="article-count">
+      
+  <div class="count-wrapper">
+    <span class="post-count">本文共 364 字</span>
+    <span class="post-count">预计花费 1 分钟</span>
+  </div>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>本系列是阅读 《图解 HTTP》 时的阅读笔记。</p>
+</blockquote>
+        <!-- 
+本系列是阅读 《图解 HTTP》 时的阅读笔记。
+
+
+3.1 HTTP 报文
+用于 HTTP 协议交互的信息被称为 HTTP 报文；
+
+请求端叫 请求报文， 响应端叫 响应报文；
+
+HTTP 本身是由多行 （用 CR + LR 作换行符） 数据构成的字符串文本。报文首部 和 报文主体 由最初出现的空行（ CR + LF ） 划分。通常，并不一定由报文主体。
+
+
+
+( CR Carriage......  -->
+        <p class="article-more-link">
+          <a href="/《图解-HTTP》-（三）-HTTP-报文内的-HTTP-信息.html#more">Read More</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTTP/">HTTP</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-解决-Enter-passphrase-key-问题"  class="article article-type-post article-home-true" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/解决-Enter-passphrase-key-问题.html">解决 Enter passphrase key 问题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/解决-Enter-passphrase-key-问题.html" class="article-date">
+	  <time datetime="2017-05-20T14:46:48.000Z" itemprop="datePublished">2017-05-20</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/烂笔头/">烂笔头</a>
+
+    </div>
+    <div class="article-count">
+      
+  <div class="count-wrapper">
+    <span class="post-count">本文共 316 字</span>
+    <span class="post-count">预计花费 1 分钟</span>
+  </div>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>在本地生成 <code>id_rsa</code> 的时候对其设定了 <code>passphrase</code> ,以至于后来每次向 <code>github</code> 仓库 <code>push</code> 的时候都要手动输入一次 <code>passphrase</code> 才验证身份，这样虽然保证了安全性，但是大大降低了便捷性。所以就去搜寻了解决方案。</p>
+</blockquote>
+        <!-- 
+在本地生成 id_rsa 的时候对其设定了 passphrase ,以至于后来每次向 github 仓库 push 的时候都要手动输入一次 passphrase 才验证身份，这样虽然保证了安全性，但是大大降低了便捷性。所以就去搜寻了解决方案。
+
+
+解决方法本地依次运行以下代码：
+12eval `ssh-agent`ssh-add
+
+
+ssh-agent 是用于管理密钥，ssh-add 用于......  -->
+        <p class="article-more-link">
+          <a href="/解决-Enter-passphrase-key-问题.html#more">Read More</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ssh/">ssh</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-Mac-下安装-eclipse-Java-EE-奇怪问题的解决方法"  class="article article-type-post article-home-true" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/Mac-下安装-eclipse-Java-EE-奇怪问题的解决方法.html">Mac 下安装 eclipse Java EE 奇怪问题的解决方法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/Mac-下安装-eclipse-Java-EE-奇怪问题的解决方法.html" class="article-date">
+	  <time datetime="2017-05-20T09:42:04.000Z" itemprop="datePublished">2017-05-20</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/烂笔头/">烂笔头</a>
+
+    </div>
+    <div class="article-count">
+      
+  <div class="count-wrapper">
+    <span class="post-count">本文共 275 字</span>
+    <span class="post-count">预计花费 1 分钟</span>
+  </div>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>Mac 下在安装 eclipse 时遇到的一个奇怪的问题，然而它的解决方法更加奇怪。</p>
+</blockquote>
+        <!-- 
+Mac 下在安装 eclipse 时遇到的一个奇怪的问题，然而它的解决方法更加奇怪。
+
+
+问题描述
+搜寻过程第一开始以为是先前安装的 jdk 版本不对，因为 相应版本的 eclipse 对应相应的 jdk 版本。如果二者对应不上就会出现打不开的现象。
+但是思来想去这个问题觉得原因应该不在于此，于是开始百度。百度错误代码，错误描述什么的都未果，直到无意间找到了知乎的一个问题，看描述和我遇到的......  -->
+        <p class="article-more-link">
+          <a href="/Mac-下安装-eclipse-Java-EE-奇怪问题的解决方法.html#more">Read More</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MacOS/">MacOS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-MacBook-下npm-install-Please-try-running-this-command-again-as-root-Administrator"  class="article article-type-post article-home-true" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/MacBook-下npm-install-Please-try-running-this-command-again-as-root-Administrator.html">MacBook 下npm install &#39;Please try running this command again as root/Administrator.&#39;</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/MacBook-下npm-install-Please-try-running-this-command-again-as-root-Administrator.html" class="article-date">
+	  <time datetime="2017-05-13T11:00:40.000Z" itemprop="datePublished">2017-05-13</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/烂笔头/">烂笔头</a>
+
+    </div>
+    <div class="article-count">
+      
+  <div class="count-wrapper">
+    <span class="post-count">本文共 278 字</span>
+    <span class="post-count">预计花费 1 分钟</span>
+  </div>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>刚入手的 Macbook Pro 2017 配置环境遇到的第一个问题就是 <code>Please try running this command again as
+  root/Administrator.</code> 起初一看第一反应就是权限问题，加 <code>sudo</code>。但出于是第一次用 Mac 觉得还是上网搜索一下为好，得到结果后想幸好搜索了一下，问题果然不是那么简单。</p>
+</blockquote>
+        <!-- 
+刚入手的 Macbook Pro 2017 配置环境遇到的第一个问题就是 Please try running this command again as
+  root/Administrator. 起初一看第一反应就是权限问题，加 sudo。但出于是第一次用 Mac 觉得还是上网搜索一下为好，得到结果后想幸好搜索了一下，问题果然不是那么简单。
+
+
+开篇先吐槽一下百度，搜出来的结果不仅质量......  -->
+        <p class="article-more-link">
+          <a href="/MacBook-下npm-install-Please-try-running-this-command-again-as-root-Administrator.html#more">Read More</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-利用 @font-face 字体图标代替传统图标图片"  class="article article-type-post article-home-true" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/利用 @font-face 字体图标代替传统图标图片.html">利用 @font-face 字体图标代替传统图标图片</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/利用 @font-face 字体图标代替传统图标图片.html" class="article-date">
+	  <time datetime="2017-05-02T00:29:13.000Z" itemprop="datePublished">2017-05-02</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/烂笔头/">烂笔头</a>
+
+    </div>
+    <div class="article-count">
+      
+  <div class="count-wrapper">
+    <span class="post-count">本文共 642 字</span>
+    <span class="post-count">预计花费 3 分钟</span>
+  </div>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>项目中经常用到一些细小的图标，常见的方法是让美工做成 <code>sprite</code> 图。业务用到的时候通过设置元素背景图，再使用 <code>background-position</code> 属性一点点地变化到相应位置达到显示效果。这种方法一旦遇到图标聚集的地方并且还有 <code>hover</code> 效果的时候内心可以说是相当崩溃的。</p>
+</blockquote>
+        <!-- 
+项目中经常用到一些细小的图标，常见的方法是让美工做成 sprite 图。业务用到的时候通过设置元素背景图，再使用 background-position 属性一点点地变化到相应位置达到显示效果。这种方法一旦遇到图标聚集的地方并且还有 hover 效果的时候内心可以说是相当崩溃的。
+
+
+@font-face 登台一言以蔽之，这个 CSS 属性可以让你像操作文本一样操作图标，故而得名字体图标（......  -->
+        <p class="article-more-link">
+          <a href="/利用 @font-face 字体图标代替传统图标图片.html#more">Read More</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/4/">Next &raquo;</a>
+  </nav>
+
+</section>
+        
+      </div>
+      
+        <div align="center" style="margin-top: 30px;"><hr class="hr" style="margin:0px; height:3px;"></div>
+      
+      <footer id="footer">
+  
+
+  <div class="container">
+      	<div class="row">
+	      <!-- <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p> -->
+	      <p id="copyRightEn">Copyright &copy; 2017 - 2018 空脑壳 All Rights Reserved.</p>
+        <p>冀ICP备17022284号</p>
+		</div>
+
+
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+    var allheader = document.getElementById("allheader");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight + "px";
+    if (allheader != null) {
+      contentdiv.style.minHeight = document.body.offsetHeight - allheader.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    } else {
+      contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    }
+</script>
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+  <script src="/js/canvas-bg.js"></script>
+
+
+<script src="/js/scripts.js"></script>
+
+
+  <script src="/js/home.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="myModalLabel">设置</h2>
+      </div>
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+
+
+      <div class="modal-body">
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
+              正文字号大小
+            </a>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            您已调整页面字体大小
+          </div>
+        </div>
+      
+
+
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="javascript:setBackground();" aria-expanded="true" aria-controls="collapseTwo">
+              夜间护眼模式
+            </a>
+        </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            夜间模式已经开启，再次单击按钮即可关闭 
+          </div>
+        </div>
+
+        <div>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关 于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            空脑壳
+          </div>
+          <div class="panel-body">
+            Copyright © 2018 雷雷雷 All Rights Reserved.
+          </div>
+        </div>
+      </div>
+
+
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
+</body>
+</html>
